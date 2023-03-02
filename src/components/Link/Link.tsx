@@ -6,6 +6,7 @@ interface LinkProps {
     className?: string;
     external?: boolean;
     href: string;
+    skip?: boolean;
 }
 
 export default function Link({
@@ -13,6 +14,7 @@ export default function Link({
     className,
     external = false,
     href,
+    skip = false,
 }: LinkProps) {
     const externalMarkup = external ? (
         <span className="visually-hidden">Opens in a new window</span>

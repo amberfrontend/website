@@ -20,9 +20,20 @@
   font-weight: bold;
 }
 
-.NavLink a:focus, .NavLink a:hover {
-  background: transparent;
-  outline: 0.4rem dotted #000;
-  outline-offset: 1rem;
-  text-decoration: none;
+@media screen and (min-width: 321px) {
+  .NavLink a:focus, .NavLink a:hover {
+    background: transparent;
+    outline: 0.4rem dotted #000;
+    outline-offset: 1rem;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .NavLink a:focus, .NavLink a:hover {
+    background: transparent;
+    outline: 0.2rem dotted #000;
+    outline-offset: 0.4rem;
+    text-decoration: none;
+  }
 }
