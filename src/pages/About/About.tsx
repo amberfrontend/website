@@ -18,9 +18,6 @@ export default function About() {
     return (
         <>
             <h1>Hi, I'm Amber</h1>
-            <Link href="/" skip>
-                Skip
-            </Link>
             <Block>
                 <p>
                     I'm a <strong className="Opt">JavaScript</strong> and{" "}
