@@ -1,0 +1,12 @@
+.MainWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    padding: 4rem;
+    position: relative;
+    width: 50%;
+    min-width: 20rem;
+    max-width: 40rem;
+}

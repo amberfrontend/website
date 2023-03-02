@@ -1,0 +1,28 @@
+.NavMain {
+  display: flex;
+}
+
+.NavMain ul {
+  align-items: center;
+  display: flex;
+  height: 9rem;
+  justify-content: space-around;
+  list-style: none;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin: 0;
+  padding-inline-start: 0;
+  width: 100%;
+}
+
+.NavLink a {
+  color: #000;
+  font-weight: bold;
+}
+
+.NavLink a:focus, .NavLink a:hover {
+  background: transparent;
+  outline: 0.4rem dotted #000;
+  outline-offset: 1rem;
+  text-decoration: none;
+}
