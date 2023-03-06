@@ -1,6 +1,7 @@
 const COLORS = {
     BLACK: "#000",
     GREEN: "#A5CD36",
+    NEAR_BLACK: "#111",
     PINK: "#BE4B8E",
     WHITE: "#FFF",
 };
@@ -9,7 +10,7 @@ export const THEME = {
     DARK: {
         BACKGROUND: {
             BODY: COLORS.BLACK,
-            HEADER: COLORS.BLACK,
+            HEADER: COLORS.NEAR_BLACK,
         },
         BUTTON: {
             BODY: {

@@ -25,3 +25,14 @@
     transform: rotate(360deg);
   }
 }
+
+.Skip {
+  position: absolute;
+  left: 0.4rem;
+  top: -2rem;
+  z-index: 9999;
+
+  &:focus {
+    top: 0.4rem;
+  }
+}

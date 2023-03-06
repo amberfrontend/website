@@ -14,7 +14,7 @@ import About from "./pages/About/About";
 import Qualifications from "./pages/Qualifications/Qualifications";
 import Contact from "./pages/Contact/Contact";
 
-import "./App.css";
+import "./App.scss";
 
 function App() {
     const [themeMode, setThemeMode] = useState(THEME.DARK);
@@ -27,9 +27,18 @@ function App() {
         );
     };
 
+    const focusMain = () => {
+        const mainElement = document.getElementsByTagName("main");
+        mainElement[0]?.focus();
+        console.log("mainElement[0]: ", mainElement[0]);
+    };
+
     return (
         <div className="App">
             <ThemeContext.Provider value={themeMode}>
+                <Button className="Skip" onClick={focusMain} type="HEADER">
+                    Skip to main content
+                </Button>
                 <Router>
                     <Header>
                         <Navigation

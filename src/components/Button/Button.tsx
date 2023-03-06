@@ -7,11 +7,17 @@ type ButtonType = "BODY" | "HEADER";
 
 export interface ButtonProps {
     children: string;
+    className?: string;
     onClick(): void;
     type: ButtonType;
 }
 
-export default function Button({ children, onClick, type }: ButtonProps) {
+export default function Button({
+    children,
+    className,
+    onClick,
+    type,
+}: ButtonProps) {
     const themeContext = useContext(ThemeContext);
 
     const handleOnClick = () => {
@@ -32,5 +38,9 @@ export default function Button({ children, onClick, type }: ButtonProps) {
         }
     `;
 
-    return <StyledButton onClick={handleOnClick}>{children}</StyledButton>;
+    return (
+        <StyledButton className={className} onClick={handleOnClick}>
+            {children}
+        </StyledButton>
+    );
 }

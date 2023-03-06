@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 
-import "./Link.scss";
 import { ThemeContext } from "../ThemeContext/ThemeContext";
 
 type LinkType = "BODY" | "HEADER";
