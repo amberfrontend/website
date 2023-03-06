@@ -11,7 +11,9 @@ body {
 }
 
 p {
-  line-height: 1.6rem;
+  line-height: 1.5rem;
+  margin-block-start: 0rem;
+  margin-block-end: 2rem;
 }
 
 code {
@@ -40,11 +42,6 @@ h1 {
 }
 
 h2, h3, h4, h5, h6 {
-  margin-block-start: 0rem;
-  margin-block-end: 1rem;
-}
-
-p {
   margin-block-start: 0rem;
   margin-block-end: 1rem;
 }

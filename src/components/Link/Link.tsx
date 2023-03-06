@@ -1,5 +1,10 @@
-import * as React from "react";
-import "./Link.css";
+import React, { useContext } from "react";
+import styled from "styled-components";
+
+import "./Link.scss";
+import { ThemeContext } from "../ThemeContext/ThemeContext";
+
+type LinkType = "BODY" | "HEADER";
 
 interface LinkProps {
     children: React.ReactNode;
@@ -7,6 +12,7 @@ interface LinkProps {
     external?: boolean;
     href: string;
     skip?: boolean;
+    type: LinkType;
 }
 
 export default function Link({
@@ -14,16 +20,36 @@ export default function Link({
     className,
     external = false,
     href,
-    skip = false,
+    type,
 }: LinkProps) {
+    const themeContext = useContext(ThemeContext);
+
     const externalMarkup = external ? (
         <span className="visually-hidden">Opens in a new window</span>
     ) : null;
 
+    const StyledLink = styled.a`
+        border-radius: 0.2rem;
+        color: ${themeContext.LINK[type]};
+        font-weight: bold;
+
+        &:focus,
+        &:hover {
+            outline: 0.2rem solid ${themeContext.LINK[type]};
+            outline-offset: 0.2rem;
+            text-decoration: none;
+        }
+    `;
+
     return (
-        <a href={href} className={className} target="_blank" rel="noreferrer">
+        <StyledLink
+            href={href}
+            className={className}
+            target="_blank"
+            rel="noreferrer"
+        >
             {children}
             {externalMarkup}
-        </a>
+        </StyledLink>
     );
 }

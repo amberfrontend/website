@@ -68,19 +68,19 @@ export default function About() {
                     culture and values of a company.
                 </p>
                 <p>
-                    One of my passions is communication and I have{" "}
-                    {`${yearsNVC}`} years of experience with{" "}
-                    <Link href="https://www.cnvc.org/" external>
+                    One of my passions is communication. I have {`${yearsNVC}`}{" "}
+                    years of experience with{" "}
+                    <Link href="https://www.cnvc.org/" external type="BODY">
                         NVC
                     </Link>
-                    , which comes in handy in a role that requires building
-                    empathy. I also have strong writing skills from years as an
-                    English tutor and from writing classes.
+                    , in addition to other communication and conflict resolution
+                    modalities. I also have strong writing skills from years as
+                    an English tutor and from writing classes.
                 </p>
             </Block>
             <Block>
                 <h2>Frontend Developer</h2>
-                <h3>Design System Engineer</h3>
+                <h3>Design System</h3>
                 <p>
                     As a frontend developer, I'm detail-oriented, efficient, and
                     take pride in shipping high quality code. I specialize in

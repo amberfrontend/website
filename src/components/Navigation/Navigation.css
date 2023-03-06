@@ -16,15 +16,14 @@
 }
 
 .NavLink a {
-  color: #000;
   font-weight: bold;
 }
 
 @media screen and (min-width: 321px) {
   .NavLink a:focus, .NavLink a:hover {
     background: transparent;
-    outline: 0.4rem dotted #000;
-    outline-offset: 1rem;
+    outline: 0.2rem solid;
+    outline-offset: 0.6rem;
     text-decoration: none;
   }
 }
@@ -32,7 +31,7 @@
 @media screen and (max-width: 320px) {
   .NavLink a:focus, .NavLink a:hover {
     background: transparent;
-    outline: 0.2rem dotted #000;
+    outline: 0.2rem solid;
     outline-offset: 0.4rem;
     text-decoration: none;
   }

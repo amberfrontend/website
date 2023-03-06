@@ -1,38 +1,60 @@
-import * as React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
 
+import { ThemeContext } from "../ThemeContext/ThemeContext";
 import "./Navigation.css";
 
-export default function Navigation() {
+interface NavigationProps {
+    themeToggleButton: React.ReactNode;
+}
+
+export default function Navigation({ themeToggleButton }: NavigationProps) {
+    const themeContext = useContext(ThemeContext);
+
+    const StyledNavLink = styled.div`
+        a {
+            border-radius: 0.2rem;
+            color: ${themeContext.LINK.HEADER};
+        }
+    `;
     return (
         <nav aria-label="main" className="NavMain">
             <ul>
                 <li>
-                    <div className="NavLink NavAbout">
-                        <Link to="/">About</Link>
-                    </div>
+                    <StyledNavLink className="NavLink NavAbout">
+                        <Link to="/" type="HEADER">
+                            About
+                        </Link>
+                    </StyledNavLink>
                 </li>
                 <li>
-                    <div className="NavLink NavExperience">
-                        <Link to="/qualifications">Qualifications</Link>
-                    </div>
+                    <StyledNavLink className="NavLink NavExperience">
+                        <Link to="/qualifications" type="HEADER">
+                            Qualifications
+                        </Link>
+                    </StyledNavLink>
                 </li>
-                {/* <li>
-                    <div className="NavLink NavPatterns">
-                        <Link to="/patterns">Patterns</Link>
-                    </div>
-                </li>
+                {/* 
                 <li>
                     <div className="NavLink NavBlog">
                         <Link to="/blog">Blog</Link>
                     </div>
                 </li> */}
                 <li>
-                    <div className="NavLink NavContact">
-                        <Link to="/contact">Contact</Link>
-                    </div>
+                    <StyledNavLink className="NavLink NavContact">
+                        <Link to="/contact" type="HEADER">
+                            Contact
+                        </Link>
+                    </StyledNavLink>
                 </li>
+                <li>{themeToggleButton}</li>
             </ul>
         </nav>
     );
 }
+
+// &:focus,
+//         &:hover {
+//             outline: 0.2rem dotted ${themeContext.PRIMARY};
+//         }

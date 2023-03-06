@@ -1,0 +1,9 @@
+@use '../../styles/styles.scss';
+
+header {
+  background-color: styles.$primary-light-mode;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+}

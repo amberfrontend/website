@@ -21,13 +21,18 @@ export default function Contact() {
                 <Link
                     href="https://www.linkedin.com/in/mizamberarmstrong"
                     external
+                    type="BODY"
                 >
                     mizamberarmstrong
                 </Link>
             </p>
             <h2>Twitter</h2>
             <p>
-                <Link href="https://twitter.com/amber_a11y" external>
+                <Link
+                    href="https://twitter.com/amber_a11y"
+                    external
+                    type="BODY"
+                >
                     @amber_a11y
                 </Link>
             </p>

@@ -17,7 +17,9 @@ export default function BlogSummary({
     return (
         <div>
             <h2>
-                <Link href={url}>{title}</Link>
+                <Link href={url} type="BODY">
+                    {title}
+                </Link>
             </h2>
             <span>{`${date.getMonth()} ${
                 date.getDay

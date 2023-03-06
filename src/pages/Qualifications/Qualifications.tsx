@@ -172,7 +172,11 @@ export default function Qualifications() {
                     <ul>
                         <li>
                             Contributed to maintaining and evolving the{" "}
-                            <Link href="https://polaris.shopify.com/" external>
+                            <Link
+                                href="https://polaris.shopify.com/"
+                                external
+                                type="BODY"
+                            >
                                 Polaris design system
                             </Link>
                         </li>
@@ -201,6 +205,7 @@ export default function Qualifications() {
                             <Link
                                 href="https://shopify.engineering/building-data-table-component-react"
                                 external
+                                type="BODY"
                             >
                                 Building a Data Table Component in React
                             </Link>{" "}
