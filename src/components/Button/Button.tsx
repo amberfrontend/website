@@ -6,7 +6,8 @@ import { ThemeContext } from "../ThemeContext/ThemeContext";
 type ButtonType = "BODY" | "HEADER";
 
 export interface ButtonProps {
-    children: string;
+    ariaLabel?: string | undefined;
+    children: any;
     className?: string;
     id?: string;
     onClick(): void;
@@ -14,6 +15,7 @@ export interface ButtonProps {
 }
 
 export default function Button({
+    ariaLabel = undefined,
     children,
     className,
     id,
@@ -41,7 +43,13 @@ export default function Button({
     `;
 
     return (
-        <StyledButton className={className} id={id} onClick={handleOnClick}>
+        <StyledButton
+            aria-label={ariaLabel}
+            className={className}
+            id={id}
+            onClick={handleOnClick}
+            title={ariaLabel}
+        >
             {children}
         </StyledButton>
     );

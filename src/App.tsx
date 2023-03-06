@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLightbulb, faMoon } from "@fortawesome/free-solid-svg-icons";
 
 import { THEME } from "./styles/theme";
 import { ThemeContext } from "./components/ThemeContext/ThemeContext";
@@ -17,14 +17,20 @@ import Contact from "./pages/Contact/Contact";
 import "./App.scss";
 
 function App() {
-    const [themeMode, setThemeMode] = useState(THEME.DARK);
-    const [buttonText, setButtonText] = useState(THEME.DARK.COPY);
+    const [themeMode, setThemeMode] = useState(THEME.LIGHT);
+    const toggleButtonLabel = useRef(THEME.LIGHT.COPY);
+    const toggleIcon = useRef(<FontAwesomeIcon icon={faMoon} />);
 
     const handleThemeToggle = () => {
         setThemeMode(themeMode === THEME.DARK ? THEME.LIGHT : THEME.DARK);
-        setButtonText(
-            themeMode === THEME.DARK ? THEME.LIGHT.COPY : THEME.DARK.COPY
-        );
+        toggleButtonLabel.current =
+            themeMode === THEME.DARK ? THEME.LIGHT.COPY : THEME.DARK.COPY;
+        toggleIcon.current =
+            themeMode === THEME.DARK ? (
+                <FontAwesomeIcon icon={faMoon} />
+            ) : (
+                <FontAwesomeIcon icon={faLightbulb} />
+            );
     };
 
     const focusMain = () => {
@@ -48,12 +54,12 @@ function App() {
                         <Navigation
                             themeToggleButton={
                                 <Button
+                                    ariaLabel={toggleButtonLabel.current}
                                     id="ToggleThemeButton"
                                     onClick={handleThemeToggle}
                                     type={"HEADER"}
                                 >
-                                    {buttonText}
-                                    {/* <FontAwesomeIcon icon={faLightBulb} /> */}
+                                    {toggleIcon.current}
                                 </Button>
                             }
                         />
