@@ -8,6 +8,7 @@ type ButtonType = "BODY" | "HEADER";
 export interface ButtonProps {
     children: string;
     className?: string;
+    id?: string;
     onClick(): void;
     type: ButtonType;
 }
@@ -15,6 +16,7 @@ export interface ButtonProps {
 export default function Button({
     children,
     className,
+    id,
     onClick,
     type,
 }: ButtonProps) {
@@ -39,7 +41,7 @@ export default function Button({
     `;
 
     return (
-        <StyledButton className={className} onClick={handleOnClick}>
+        <StyledButton className={className} id={id} onClick={handleOnClick}>
             {children}
         </StyledButton>
     );

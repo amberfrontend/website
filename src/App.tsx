@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
@@ -30,8 +30,12 @@ function App() {
     const focusMain = () => {
         const mainElement = document.getElementsByTagName("main");
         mainElement[0]?.focus();
-        console.log("mainElement[0]: ", mainElement[0]);
     };
+
+    useEffect(() => {
+        const toggleButton = document.getElementById("ToggleThemeButton");
+        toggleButton?.focus();
+    }, [themeMode]);
 
     return (
         <div className="App">
@@ -44,6 +48,7 @@ function App() {
                         <Navigation
                             themeToggleButton={
                                 <Button
+                                    id="ToggleThemeButton"
                                     onClick={handleThemeToggle}
                                     type={"HEADER"}
                                 >
