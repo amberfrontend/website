@@ -66,7 +66,7 @@ export default function Qualifications() {
                         <li>Write accessibility documentation for project owners, 
                         designers, developers, and QA</li>
                         <li>Recommend and mature scalable processes throughout 
-                            the software development process to mature the accessibility 
+                            the software development lifecycle to mature the accessibility 
                             practice</li>
                         <li>Evaluate and recommend accessibility tools for
                         designers, developers, and testers</li>
