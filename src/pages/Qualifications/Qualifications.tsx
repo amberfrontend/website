@@ -57,6 +57,28 @@ export default function Qualifications() {
                 </ul> */}
                 <hr aria-hidden="true" />
                 <h2>Experience</h2>
+                <h3>Lead Digital Accessibility Specialist</h3>
+                <h4>Scotiabank</h4>
+                <p>
+                    <ul>
+                        <li>Provide technical leadership and guidance for digital 
+                            accessibility</li>
+                        <li>Write accessibility documentation for project owners, 
+                        designers, developers, and QA</li>
+                        <li>Recommend and mature scalable processes throughout 
+                            the software development process to mature the accessibility 
+                            practice</li>
+                        <li>Evaluate and recommend accessibility tools for
+                        designers, developers, and testers</li>
+                        <li>Design and analyze metrics to better inform
+                        accessibility efforts and to improve reporting</li>
+                        <li>Drive adoption of evolving accessibility standards</li>
+                        <li>Mentor a university student</li>
+                    </ul>
+                </p>
+                </div>
+            <hr aria-hidden="true" />
+            <div>
                 <h3>Senior Software Engineer and Accessibility Specialist</h3>
                 <h4>Achievers</h4>
                 <p>
