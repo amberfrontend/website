@@ -21,8 +21,8 @@ export default function About() {
             <Block>
                 <p>
                     I'm a <strong className="Opt">JavaScript</strong> and{" "}
-                    <strong className="Opt">React</strong> developer in{" "}
-                    <strong className="Opt">British Columbia, Canada</strong>. I
+                    <strong className="Opt">React</strong> developer based in{" "}
+                    <strong className="Opt">Canada</strong>. I
                     have {`${yearsSoftware}`} years of experience in frontend
                     software development and {`${yearsWeb}`} years in the web
                     industry. I specialize in Digital Accessibility and Design
