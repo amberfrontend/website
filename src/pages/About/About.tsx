@@ -22,51 +22,11 @@ export default function About() {
                 <p>
                     I'm a <strong className="Opt">JavaScript</strong> and{" "}
                     <strong className="Opt">React</strong> developer based in{" "}
-                    <strong className="Opt">Canada</strong>. I
-                    have {`${yearsSoftware}`} years of experience in frontend
-                    software development and about {`${yearsWeb}`} years in the web
-                    industry. I specialize in developing and scaling design systems 
-                    that prioritize inclusion. I combine technical expertise with a 
-                    passion for UX to build accessible software.
-                </p>
-            </Block>
-            <Block>
-                <h2>Digital Accessibility Specialist</h2>
-                <p>
-                    I came to <strong className="Opt">accessibility</strong>{" "}
-                    from a diverse and well-rounded background. Professionally,
-                    I began my career as a UI/UX designer, creating logos and
-                    websites. I moved over to programming and then focused on
-                    frontend software development in{" "}
-                    <strong className="Opt">React</strong>.
-                </p>
-                <h3>Technical Consultant</h3>
-                <p>
-                    My main strength is on the technical side of accessibility.
-                    I provide guidance and creative solutions for some of the
-                    trickier accessibility challenges that come with modern
-                    design patterns, like animation, interactivity, and dynamic
-                    content.
-                </p>
-                {/* <p>
-                    Because I've been in the web industry for so long and have
-                    worked with so many frameworks, I can remediate almost
-                    anything you throw at me, whether it's in a modern framework
-                    like React, Angular, or Vue, in a CMS like WordPress or
-                    Drupal, in an MVC framework like Rails, Django, or ASP.NET,
-                    or in a JavaScript framework like backbone.js, knockout.js.
-                </p> */}
-                <h3>Accessibility Program Manager</h3>
-                <p>
-                    As I gained experience and seniority in software
-                    development, I naturally moved into the role of program
-                    manager. I can take an enterprise application from zero to
-                    WCAG compliance, aligning all stakeholders, including
-                    executive leadership, project managers, design, development,
-                    and content strategy. I can build a cross-disciplinary
-                    digital accessibility program including education, training,
-                    tooling, auditing, quality assurance, and building
-                    accessibility into the culture and values of a company.
+                    <strong className="Opt">Canada</strong>, with {`${yearsSoftware}`} 
+                    years of experience in frontend software development and 
+                    {`${yearsWeb}`} years in the web industry. I eat and breathe 
+                    delightful UX for users of all capabilities, so I specialize 
+                    in developing and scaling design systems that prioritize inclusion.
                 </p>
             </Block>
             <Block>
@@ -100,7 +60,32 @@ export default function About() {
                 </p>
             </Block>
             <Block>
-                <h2>Other Skills</h2>
+                <h2>Digital Accessibility Specialist</h2>
+                <p>
+                    I came to <strong className="Opt">accessibility</strong>{" "}
+                    from a diverse and well-rounded background. Professionally,
+                    I began my career as a UI/UX designer, creating logos and
+                    websites. I moved over to programming and then focused on
+                    frontend software development in{" "}
+                    <strong className="Opt">React</strong>.
+                </p>
+                <h3>Technical Consultant</h3>
+                <p>
+                    My main strength is on the technical side of accessibility.
+                    I provide guidance and creative solutions for some of the
+                    trickier accessibility challenges that come with modern
+                    design patterns, like animation, interactivity, and dynamic
+                    content.
+                </p>
+                <p>
+                    I can remediate almost anything you throw at me, whether 
+                    it's in a framework like React, Angular, or Vue, in a CMS 
+                    like WordPress or AEM, in an MVC framework like Rails, Django, 
+                    or ASP.NET, or in a JavaScript framework like backbone.js, knockout.js.
+                </p>
+            </Block>
+            <Block>
+                <h2>Soft Skills</h2>
                 <p>
                     One of my passions is communication. I have {`${yearsNVC}`}{" "}
                     years of experience with{" "}
@@ -111,11 +96,6 @@ export default function About() {
                     modalities. I also have strong writing skills from years as
                     an English tutor and from writing classes.
                 </p>
-                {/* <p>
-                    My background includes strategic planning on boards of
-                    directors, project management, and office management. I'm a
-                    strong leader who focuses on supporting 
-                </p> */}
             </Block>
             <Block>
                 <h2>Human</h2>
