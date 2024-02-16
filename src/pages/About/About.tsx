@@ -7,8 +7,8 @@ export default function About() {
     const pageName = "About";
     const today = new Date();
     const year = today.getFullYear();
-    const yearsSoftware = year - 2017;
-    const yearsWeb = year - 1999 - 6;
+    const yearsSoftware = year - 2016;
+    const yearsWeb = year - 1999 - 4;
     const yearsNVC = year - 2006;
 
     useEffect(() => {
@@ -24,9 +24,10 @@ export default function About() {
                     <strong className="Opt">React</strong> developer based in{" "}
                     <strong className="Opt">Canada</strong>. I
                     have {`${yearsSoftware}`} years of experience in frontend
-                    software development and {`${yearsWeb}`} years in the web
-                    industry. I specialize in Digital Accessibility and Design
-                    Systems.
+                    software development and about {`${yearsWeb}`} years in the web
+                    industry. I specialize in developing and scaling design systems 
+                    that prioritize inclusion. I combine technical expertise with a 
+                    passion for UX to build accessible software.
                 </p>
             </Block>
             <Block>
