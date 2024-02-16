@@ -1,6 +1,6 @@
 const COLORS = {
     BLACK: "#000",
-    GREEN: "#A5CD36",
+    GREEN: "#00b4c5",
     NEAR_BLACK: "#111",
     PINK: "#BE4B8E",
     WHITE: "#FFF",
