@@ -35,10 +35,11 @@ export default function Qualifications() {
                     <li>
                         IAAP Certified Professional in Accessibility Core
                         Competencies (
-                        <Link
-                            href="https://www.accessibilityassociation.org/s/certified-professional"
-                            external
-                        >
+                        <Link 
+                          href="https://www.accessibilityassociation.org/s/certified-professional" 
+                          external
+                          type="BODY"
+                          >
                             CPACC
                         </Link>
                         )
@@ -157,7 +158,7 @@ export default function Qualifications() {
             </div>
             <hr aria-hidden="true" />
             <div>
-            <h3>Frontend Developer</h3>
+                <h3>Frontend Developer</h3>
                 <h4>MoneyMover</h4>
                 <p>
                     <ul>
