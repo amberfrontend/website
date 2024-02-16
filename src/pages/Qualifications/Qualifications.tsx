@@ -75,7 +75,7 @@ export default function Qualifications() {
                 </div>
             <hr aria-hidden="true" />
             <div>
-                <h3>Senior Software Engineer and Accessibility Specialist</h3>
+                <h3>Senior Software Engineer (Accessibility)</h3>
                 <h4>Achievers</h4>
                 <p>
                     <ul>
@@ -118,28 +118,18 @@ export default function Qualifications() {
                 <h4>Shopify</h4>
                 <p>
                     <ul>
-                        <li>
-                            Contributed to maintaining and evolving the{" "}
-                            <Link
-                                href="https://polaris.shopify.com/"
-                                external
-                                type="BODY"
-                            >
-                                Polaris design system
-                            </Link>
-                        </li>
-
                         <li>Evolved the <Link
                                 href="https://polaris.shopify.com/"
                                 external
                                 type="BODY"
                             >
-                                Polaris design system
+                                Polaris
                             </Link> design system by refactoring existing 
                             components and developing new accessible components, including 
                             global chrome, dual thumb range slider, toast, drawer, 
                             data table, modal dialog, and popover</li>
                             <li>Increased overall code coverage to 90% by writing nearly 100 unit tests</li>
+                            <li>Improved technical guidance for developers and third-party developers by writing documentation for the design system</li>
                             <li>Improved the Shopify admin by migrating a section from Rails to React, developing the filters and search section, and developing a customer dashboard</li>
                             <li>Improved accessibility of many components by collaborating with the accessibility specialist on the Polaris team</li>
                             <li>Won a Hack Days competition with an SEO tool that was ultimately built into the admin section</li>
