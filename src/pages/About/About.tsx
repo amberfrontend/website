@@ -22,18 +22,19 @@ export default function About() {
                 <p>
                     I'm a <strong className="Opt">JavaScript</strong> and{" "}
                     <strong className="Opt">React</strong> developer based in{" "}
-                    <strong className="Opt">Canada</strong>, with {`${yearsSoftware}`} 
-                    years of experience in frontend software development and 
-                    {`${yearsWeb}`} years in the web industry. I eat and breathe 
-                    delightful UX for users of all capabilities, so I specialize 
-                    in developing and scaling design systems that prioritize inclusion.
+                    <strong className="Opt">Canada</strong>, with 
+                    {" "}{`${yearsSoftware}`}{" "}years of experience in frontend 
+                    software development and{" "}{`${yearsWeb}`}{" "}years in the 
+                    web industry. I eat and breathe good UX for users of all 
+                    capabilities, so I specialize in developing and scaling 
+                    smart design systems that prioritize inclusion.
                 </p>
             </Block>
             <Block>
                 <h2>Frontend Developer</h2>
                 <h3>Design Systems</h3>
                 <p>
-                    I specialize in user interface development and design system
+                    I specialize in UI/UX development and design system
                     architecture. I apply systems design thinking, like
                     flexibility, composability, creating great user experience
                     while supporting other developers, consistency and alignment
@@ -41,22 +42,22 @@ export default function About() {
                 </p>
                 <p>
                     As a frontend developer, I'm detail-oriented, efficient, and
-                    take pride in shipping high quality code. My language of
-                    choice is TypeScript, but JavaScript is still welcome with
-                    all its idiosyncracies. I'm a fan of DRY, TDD, SoC, and SRP
-                    architecture principles. I secretly love writing unit tests.
+                    take pride in shipping clean code. My language of
+                    choice is TypeScript, but I also code in JavaScript. 
+                    I'm a fan of DRY (Don't Repeat Yourself), TDD (Test-Driven 
+                    Development), and mobile-first. I secretly love writing unit tests.
                 </p>
                 <p>
                     I've also built full features, written theme engines and
-                    utilities, developed APIs, managed state trees, improved
-                    performance, implemented security best practices to protect
-                    against XSS attacks, and written asynchronous API calls.
+                    utilities, developed APIs, managed state trees, and improved
+                    performance.
                 </p>
                 <h3>Mentor</h3>
                 <p>
-                    I love mentoring other developers. I myself was mentored by
-                    some very smart and patient engineers and it's a joy to now
-                    help others build their skills.
+                    I was mentored by some engineers far smarter than me and now it's 
+                    a joy to pay it forward and help others level up their skills. 
+                    I'm a big fan of pair-programming culture. I'm patient and 
+                    good at explaining things in a way that it clicks for people.
                 </p>
             </Block>
             <Block>
@@ -104,7 +105,7 @@ export default function About() {
                     enthusiasm. I have a zest for life with an endless sense of
                     curiosity. As a kid, I used to dismantle my electronic toys
                     and constantly asked the question, "Why?" because I wanted
-                    to understand everything. That hasn't changed much.
+                    to understand everything.
                 </p>
                 <p>
                     I'm highly self-motivated and driven by impact. I thrive in
@@ -112,14 +113,10 @@ export default function About() {
                     improving quality.
                 </p>
                 <p>
-                    For fun, I have many hobbies. I'm a huge audiophile, former
-                    musician, and songwriter. I've performed as the lead singer
-                    in musicals. I've competed in and won slam poetry
-                    competitions. I'm a voracious reader, mostly in science,
-                    psychology, and neurobiology. I also enjoy cooking,
-                    snowshoeing, dancing, cycling, and photography. I'm the
-                    first to admit that I make terrible dad jokes and laugh at
-                    my own puns.
+                    For fun, I have many hobbies. I'm a huge music lover and former
+                    musician. I also enjoy cooking, snowshoeing, canoeing, cycling, 
+                    and nerdy games. I'm the first to admit that I make terrible 
+                    puns and laugh at my own jokes.
                 </p>
             </Block>
         </>
