@@ -49,7 +49,7 @@ function App() {
                 <Button className="Skip" onClick={focusMain} type="HEADER">
                     Skip to main content
                 </Button>
-                <Router forceRefresh={true}>
+                <Router>
                     <Header>
                         <Navigation
                             themeToggleButton={
