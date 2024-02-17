@@ -20,37 +20,44 @@ export default function About() {
             <h1>Hi, I'm Amber</h1>
             <Block>
                 <p>
-                    I'm a <strong className="Opt">JavaScript</strong> and{" "}
-                    <strong className="Opt">React</strong> developer based in{" "}
+                    I'm a <strong className="Opt">Frontend Developer</strong> based in{" "}
                     <strong className="Opt">Canada</strong>, with 
-                    {" "}{`${yearsSoftware}`}{" "}years of experience in frontend 
+                    {" "}{`${yearsSoftware}`}{" "}years of experience in  
                     software development and{" "}{`${yearsWeb}`}{" "}years in the 
-                    web industry. UI/UX is my jam. 
+                    web industry. I began my career as a UI/UX designer, creating logos and
+                    websites, then moved over to programming and focused on the
+                    frontend, mostly in{" "} <strong className="Opt">React</strong>.
                 </p>
             </Block>
             <Block>
                 <h2>Frontend Developer</h2>
                 <h3>Design Systems</h3>
                 <p>
-                    I'm obsessed with excellent UX for users of all 
-                    capabilities, so I specialize in developing and scaling 
-                    smart design systems that prioritize inclusion.
-                    I employ systems design principles, like
-                    composability, consistency, and scalability.
-                    I enjoy solving pain points for both end users and the 
-                    developers consuming what I build. I aim to balance
-                    flexibility with proper guardrails and fallbacks.
+                    Excellent UX for users of all capabilities is my jam, so I 
+                    specialize in developing beautiful design systems that 
+                    prioritize inclusion. Design systems are the backbone of 
+                    any piece of software, so they're a perfect place to define
+                    the standards that will affect the entire app, ultimately 
+                    impacting the end user.
+                <p>
+                </p>
+                    Component libraries should be flexible and collaborative, without 
+                    compromising on consistency, so I aim to expose the right 
+                    configurable pieces, while installing guardrails and fallbacks. 
+                    I employ systems design principles, like composability and 
+                    scalability. I attempt to build iteratively in ways that avoid 
+                    potential breaking changes in the future.
+                </p>
+                <h3>Frontend</h3>
+                <p>
+                    As a frontend developer, I'm meticulous, efficient, and
+                    ship clean code. My language of choice is TypeScript, 
+                    but I also code in JavaScript. I'm a fan of mobile-first, 
+                    DRY (Don't Repeat Yourself), and TDD (Test-Driven Development).
+                    I secretly love writing unit tests.
                 </p>
                 <p>
-                    As a frontend developer, I'm detail-oriented, efficient, and
-                    take pride in shipping clean code. My language of
-                    choice is TypeScript, but I also code in JavaScript. 
-                    I'm a fan of mobile-first, DRY (Don't Repeat Yourself), 
-                    and TDD (Test-Driven Development). I secretly love writing 
-                    unit tests.
-                </p>
-                <p>
-                    I've also built full features, written theme engines and
+                    I've built full features, written theme engines and
                     utilities, developed APIs, managed state trees, and improved
                     performance.
                 </p>
@@ -63,19 +70,18 @@ export default function About() {
                 </p>
             </Block>
             <Block>
-                <h2>Digital Accessibility Specialist</h2>
-                <p>
-                    I came to <strong className="Opt">accessibility</strong>{" "}
-                    from a diverse and well-rounded background. Professionally,
-                    I began my career as a UI/UX designer, creating logos and
-                    websites. I moved over to programming and then focused on
-                    frontend software development in{" "}
-                    <strong className="Opt">React</strong>.
-                </p>
-                <p>I fell in love with digital accessibility and have incorporated
-                    it into everything I develop. I've reached a point in my career 
-                    where I only want to work on products that include accessibility 
-                    because it's the right thing to do.
+                <h2>Digital Accessibility</h2>
+                <p>I fell in love with 
+                    <strong className="Opt">digital accessibility</strong>{" "} while I 
+                    was working on the <Link
+                                href="https://polaris.shopify.com/"
+                                external
+                                type="BODY"
+                            >
+                                Polaris design system</Link> and have since
+                    incorporated it into everything I develop. I've reached a point 
+                    in my career where I only want to work on software that
+                    prioritizes accessibility because it's the right thing to do.
                 </p>
                 <h3>Technical Consultant</h3>
                 <p>
@@ -86,44 +92,52 @@ export default function About() {
                     content.
                 </p>
                 <p>
-                    I can remediate almost anything you throw at me, whether 
+                    It's common for consumers of a design system to 
+                    have only a general understanding of accessibility, so it's 
+                    my opinion that a design system should not only bake in 
+                    accessibility, but should also act as a guide to its consumers.
+                    I excel at incorporating accessibility into a component library.
+                </p>
+                {/* <p>
+                    I can also remediate almost anything you throw at me, whether 
                     it's in a framework like React, Angular, or Vue, in a CMS 
                     like WordPress or AEM, in an MVC framework like Rails, Django, 
                     or ASP.NET, or in a JavaScript framework like backbone.js, knockout.js.
                     But I prefer to build it right the first time.
-                </p>
+                </p> */}
             </Block>
             <Block>
                 <h2>Soft Skills</h2>
+                <h3>Communication</h3>
                 <p>
                     One of my passions is communication. I have {`${yearsNVC}`}{" "}
                     years of experience with{" "}
                     <Link href="https://www.cnvc.org/" external type="BODY">
-                        NVC
+                        empathic communication
                     </Link>{" "}
                     in addition to other communication and conflict resolution
                     modalities. I also have strong writing skills from years as
                     an English tutor and from writing classes.
                 </p>
-            </Block>
-            <Block>
-                <h2>As a Person</h2>
+                <h3>At Work</h3>
+                <p>
+                    I'm highly self-motivated and driven by impact. I prefer 
+                    being held to high standards and being intellectually 
+                    challenged to solve problems efficiently. I thrive in a 
+                    collaborative, fast-paced environment. 
+                </p>
+                <p>I'm T-shaped, which means I have both a deep level of
+                    expertise in my craft and a broad understanding across a 
+                    number of adjascent topics. 
+                </p>
+                <h3>As a Person</h3>
                 <p>
                     The first thing people often notice about me is my
                     enthusiasm. I have a zest for life with an endless sense of
                     curiosity. As a kid, I used to dismantle my electronic toys
                     and constantly asked the question, "Why?" because I wanted
-                    to understand everything.
-                </p>
-                <p>There are two things that have been said of me many times:
-                    I'm resilient and a "force of nature". I'm a go-getter 
-                    and have broken many glass ceilings. I get stuff done.
-                </p>
-                <p>
-                    I'm highly self-motivated and driven by impact. I thrive in
-                    an environment where I'm continuously solving problems and
-                    improving quality.
-                </p>
+                    to understand everything. That hasn't changed much.
+                </p>             
                 <p>
                     For fun, I have many hobbies. I'm a huge music lover and former
                     musician. I also enjoy cooking, snowshoeing, canoeing, cycling, 
