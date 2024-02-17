@@ -71,9 +71,9 @@ export default function About() {
             </Block>
             <Block>
                 <h2>Digital Accessibility</h2>
-                <p>I fell in love with 
-                    <strong className="Opt">digital accessibility</strong>{" "} while I 
-                    was working on the <Link
+                <p>I fell in love with{" "}
+                    <strong className="Opt">digital accessibility</strong>{" "} 
+                    while working on the <Link
                                 href="https://polaris.shopify.com/"
                                 external
                                 type="BODY"
