@@ -43,10 +43,6 @@ function App() {
         toggleButton?.focus();
     }, [themeMode]);
 
-    const navigate = useLocation();
-
-    navigate(0);
-
     return (
         <div className="App">
             <ThemeContext.Provider value={themeMode}>
