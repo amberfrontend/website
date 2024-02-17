@@ -43,13 +43,17 @@ function App() {
         toggleButton?.focus();
     }, [themeMode]);
 
+    const navigate = useLocation();
+
+    navigate(0);
+
     return (
         <div className="App">
             <ThemeContext.Provider value={themeMode}>
                 <Button className="Skip" onClick={focusMain} type="HEADER">
                     Skip to main content
                 </Button>
-                <Router>
+                <Router forceRefresh={true}>
                     <Header>
                         <Navigation
                             themeToggleButton={
