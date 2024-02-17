@@ -42,7 +42,7 @@ export default function Link({
     }
   `;
 
-  const ariaCurrent = current ? "page" : null;
+  const ariaCurrent = current ? "page" : false;
 
   return (
     <StyledLink
