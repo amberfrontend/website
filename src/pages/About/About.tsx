@@ -33,7 +33,7 @@ export default function About() {
                 <h2>Frontend Developer</h2>
                 <h3>Design Systems</h3>
                 <p>
-                    Excellent UX for users of all capabilities is my jam, so I 
+                    Great UX is my jam, so I 
                     specialize in developing beautiful design systems that 
                     prioritize inclusion. Design systems are the backbone of 
                     any piece of software, so they're a perfect place to define
@@ -54,12 +54,13 @@ export default function About() {
                     ship clean code. My language of choice is TypeScript, 
                     but I also code in JavaScript. I'm a fan of mobile-first, 
                     DRY (Don't Repeat Yourself), and TDD (Test-Driven Development).
-                    I secretly love writing unit tests.
+                    
                 </p>
                 <p>
-                    I've built full features, written theme engines and
+                    In addition to my work on a few design systems, I've built full 
+                    features, written theme engines and
                     utilities, developed APIs, managed state trees, and improved
-                    performance.
+                    performance. I secretly love writing unit tests.
                 </p>
                 <h3>Mentor</h3>
                 <p>
