@@ -37,7 +37,7 @@ export default function Link({
     &:focus,
     &:hover {
       outline: 0.2rem solid ${themeContext.LINK[type]};
-      outline-offset: 0.2rem;
+      outline-offset: 0.05rem;
       text-decoration: none;
     }
   `;

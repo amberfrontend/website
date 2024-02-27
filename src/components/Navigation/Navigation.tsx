@@ -18,6 +18,7 @@ export default function Navigation({ themeToggleButton }: NavigationProps) {
       color: ${themeContext.LINK.HEADER};
     }
   `;
+
   return (
     <nav aria-label="main" className="NavMain">
       <ul>
