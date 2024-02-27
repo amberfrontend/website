@@ -5,7 +5,7 @@
 .NavMain ul {
   align-items: center;
   display: flex;
-  height: 9rem;
+  height: 5rem;
   justify-content: space-around;
   list-style: none;
   margin-block-end: 0;
@@ -17,22 +17,25 @@
 
 .NavLink a {
   font-weight: bold;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 321px) {
-  .NavLink a:focus, .NavLink a:hover {
+  .NavLink a:focus,
+  .NavLink a:hover {
     background: transparent;
     outline: 0.2rem solid;
-    outline-offset: 0.6rem;
+    outline-offset: 0.05rem;
     text-decoration: none;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .NavLink a:focus, .NavLink a:hover {
+  .NavLink a:focus,
+  .NavLink a:hover {
     background: transparent;
     outline: 0.2rem solid;
-    outline-offset: 0.4rem;
+    outline-offset: 0.05rem;
     text-decoration: none;
   }
 }
