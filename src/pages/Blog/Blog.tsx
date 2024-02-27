@@ -5,32 +5,32 @@ import { butterCMS } from "../../utilities/butter-cms";
 // const butter = Butter('9dd31e8e8e2a2236688b4d54b14470e27591778d');
 
 export default function Blog() {
-    const [butterError, setButterError] = useState(false);
-    // const [loaded, setLoaded] = useState(false);
-    const [blogPosts, setBlogPosts] = useState([]);
+  const [butterError, setButterError] = useState(false);
+  // const [loaded, setLoaded] = useState(false);
+  const [blogPosts, setBlogPosts] = useState([]);
 
-    const pageName = "Blog";
+  const pageName = "Blog";
 
-    useEffect(() => {
-        document.title = `${siteName}${pageName}`;
-    }, []);
+  useEffect(() => {
+    document.title = `${siteName}${pageName}`;
+  }, []);
 
-    useEffect(() => {
-        // let filterBy = {};
+  useEffect(() => {
+    // let filterBy = {};
 
-        const loadData = async () => {
-            try {
-                // const posts = await Butter.post.list(filterBy)
-                // const posts = await butterCMS.post.list(filterBy);
-                // setBlogPosts(posts);
-            } catch (error) {
-                setButterError(true);
-                console.log(butterError);
-            }
-        };
+    const loadData = async () => {
+      try {
+        // const posts = await Butter.post.list(filterBy)
+        // const posts = await butterCMS.post.list(filterBy);
+        // setBlogPosts(posts);
+      } catch (error) {
+        setButterError(true);
+        console.log(butterError);
+      }
+    };
 
-        loadData();
-    });
+    loadData();
+  });
 
-    return <div>{blogPosts}</div>;
+  return <div>{blogPosts}</div>;
 }

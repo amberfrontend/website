@@ -36,9 +36,9 @@ export default function Link({
 
     &:focus,
     &:hover {
-        outline: 0.2rem solid ${themeContext.LINK[type]};
-        outline-offset: 0.2rem;
-        text-decoration: none;
+      outline: 0.2rem solid ${themeContext.LINK[type]};
+      outline-offset: 0.2rem;
+      text-decoration: none;
     }
   `;
 
@@ -46,14 +46,14 @@ export default function Link({
 
   return (
     <StyledLink
-        href={href}
-        className={className}
-        aria-current={ariaCurrent}
-        target="_blank"
-        rel="noreferrer"
+      href={href}
+      className={className}
+      aria-current={ariaCurrent}
+      target="_blank"
+      rel="noreferrer"
     >
-        {children}
-        {externalMarkup}
+      {children}
+      {externalMarkup}
     </StyledLink>
   );
 }
