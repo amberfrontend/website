@@ -10,6 +10,7 @@ import Navigation from "./components/Navigation/Navigation";
 import Main from "./components/Main/Main";
 import Button from "./components/Button/Button";
 
+import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Qualifications from "./pages/Qualifications/Qualifications";
 import Contact from "./pages/Contact/Contact";
@@ -66,7 +67,8 @@ function App() {
           </Header>
           <Main>
             <Routes>
-              <Route path="/" element={<About />}></Route>
+              <Route path="/" element={<Home />}></Route>
+              <Route path="/about" element={<About />}></Route>
               <Route
                 path="/qualifications"
                 element={<Qualifications />}

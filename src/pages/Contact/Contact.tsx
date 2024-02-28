@@ -12,7 +12,8 @@ export default function Contact() {
   return (
     <>
       <h1>{pageName}</h1>
-      <h2>LinkedIn</h2>
+      <h2>Amber Armstrong</h2>
+      <h3>LinkedIn</h3>
       <p>
         <Link
           href="https://www.linkedin.com/in/mizamberarmstrong"
@@ -20,6 +21,12 @@ export default function Contact() {
           type="BODY"
         >
           mizamberarmstrong
+        </Link>
+      </p>
+      <h3>CodePen</h3>
+      <p>
+        <Link href="https://codepen.io/amberarmstrong" external type="BODY">
+          amberarmstrong
         </Link>
       </p>
     </>

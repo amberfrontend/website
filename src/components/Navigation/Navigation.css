@@ -20,6 +20,28 @@
   text-decoration: none;
 }
 
+.NavLink .LogoWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.NavLink.Logo a {
+  font-family: "Zen Kurenaido";
+  font-size: 1.5rem;
+  display: block;
+}
+
+.NavLink.Logo a .LeftLetter {
+  color: #dd0099;
+  margin-right: 0.2rem;
+  transform: rotate(-90deg);
+}
+
+.NavLink.Logo a .RightLetter {
+  margin-left: 0.2rem;
+  transform: rotate(90deg);
+}
+
 @media screen and (min-width: 321px) {
   .NavLink a:focus,
   .NavLink a:hover {

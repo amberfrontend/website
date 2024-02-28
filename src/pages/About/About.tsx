@@ -7,8 +7,7 @@ export default function About() {
   const pageName = "About";
   const today = new Date();
   const year = today.getFullYear();
-  const yearsSoftware = year - 2016;
-  const yearsWeb = year - 1999 - 4;
+
   const yearsNVC = year - 2006;
 
   useEffect(() => {
@@ -17,45 +16,51 @@ export default function About() {
 
   return (
     <>
-      <h1>Hi, I'm Amber</h1>
+      <h1>About Amber Armstrong</h1>
       <Block>
         <p>
-          I'm a <strong className="Opt">Frontend Developer</strong> based in{" "}
-          <strong className="Opt">Canada</strong>, with {`${yearsSoftware}`}{" "}
-          years of experience in software development and {`${yearsWeb}`} years
-          in the web industry. I began my career as a UI/UX designer, creating
-          logos and websites, then moved over to programming and focused on the
-          frontend, mostly in <strong className="Opt">React</strong>.
+          I began my career as a web designer, creating logos and websites,
+          until I discovered how much I love programming and moved over to
+          software development. I focus on the frontend, mostly in{" "}
+          <strong className="Opt">React</strong>.
         </p>
+        <p>You could say I'm a software engineeer who understands design.</p>
       </Block>
       <Block>
         <h2>Frontend Developer</h2>
+        <h3>Frontend</h3>
+        <p>
+          As a frontend developer, I'm a determined problem solver - constantly
+          learning to improve my skills. I prefer readable code over cleverness.
+          My language of choice is TypeScript, but I also code in JavaScript.
+          I'm a fan of mobile-first, DRY (Don't Repeat Yourself), and TDD
+          (Test-Driven Development).
+        </p>
+        <p>
+          I've built full features, including API calls and state management,
+          I've written theme engines and utilities, developed APIs, and improved
+          performance. I secretly love writing unit tests.
+        </p>
         <h3>Design Systems</h3>
         <p>
           Great UX is my jam and I consider accessibility as a core component of
-          UX, so I specialize in design systems that prioritize inclusion.
+          UX, so I specialize in component libraries that prioritize inclusion.
           Design systems are the foundation of any piece of software, so they're
           a perfect place to define the standards that will affect the entire
           app.
-          <p></p>
+        </p>
+        <p>
+          So far, I've worked on three different React component libraries,
+          handling accessibility, maturing and maintaining the components, as
+          well as managing deploys and versioning.
+        </p>
+        <p>
           Component libraries should be flexible and collaborative, without
           compromising on consistency, so I aim to expose the right configurable
           pieces, while installing guardrails and fallbacks. I employ systems
           design principles, like composability and scalability. I attempt to
           build iteratively in ways that avoid potential breaking changes in the
           future.
-        </p>
-        <h3>Frontend</h3>
-        <p>
-          As a frontend developer, I'm meticulous, efficient, and ship clean
-          code. My language of choice is TypeScript, but I also code in
-          JavaScript. I'm a fan of mobile-first, DRY (Don't Repeat Yourself),
-          and TDD (Test-Driven Development).
-        </p>
-        <p>
-          I've built full features, written theme engines and utilities,
-          developed APIs, managed state trees, and improved performance. I
-          secretly love writing unit tests.
         </p>
         <h3>Mentor</h3>
         <p>
@@ -86,11 +91,9 @@ export default function About() {
           interactivity, and dynamic content.
         </p>
         <p>
-          It's common for consumers of a design system to have only a general
-          understanding of accessibility, so it's my opinion that a design
-          system should not only bake in accessibility, but should also act as a
-          guide to its consumers. I excel at incorporating accessibility into a
-          component library.
+          I believe that a design system should not only bake in accessibility,
+          but should also act as a guide to its consumers. I excel at
+          incorporating accessibility into a component library.
         </p>
         {/* <p>
                     I can also remediate almost anything you throw at me, whether 
@@ -116,8 +119,8 @@ export default function About() {
         <h3>At Work</h3>
         <p>
           I'm highly self-motivated and driven by impact. I prefer being held to
-          high standards and being intellectually challenged to solve problems
-          efficiently. I thrive in a collaborative, fast-paced environment.
+          high standards and being challenged in interesting ways. I thrive in a
+          collaborative, fast-paced environment.
         </p>
         <p>
           I'm T-shaped, which means I have both a deep level of expertise in my
