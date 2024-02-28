@@ -23,8 +23,19 @@ export default function Navigation({ themeToggleButton }: NavigationProps) {
     <nav aria-label="main" className="NavMain">
       <ul>
         <li>
-          <StyledNavLink className="NavLink NavAbout">
+          <StyledNavLink className="NavLink NavAbout Logo">
             <Link to="/" type="HEADER">
+              <div className="LogoWrapper">
+                <span className="LeftLetter">A</span>
+                <span aria-hidden={true}>/</span>
+                <span className="RightLetter">A</span>
+              </div>
+            </Link>
+          </StyledNavLink>
+        </li>
+        <li>
+          <StyledNavLink className="NavLink NavAbout">
+            <Link to="/about" type="HEADER">
               About
             </Link>
           </StyledNavLink>

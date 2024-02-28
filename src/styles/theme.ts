@@ -1,9 +1,9 @@
 const COLORS = {
   BLACK: "#000",
   NEUTRAL: "#eeeadc",
-  PRIMARY: "#dd3322",
+  PRIMARY: "#dd0099",
   NEAR_BLACK: "#170901",
-  SECONDARY: "#00b4c5",
+  SECONDARY: "#ffab01",
   WHITE: "#fff",
 };
 
@@ -42,7 +42,7 @@ export const THEME = {
   LIGHT: {
     BACKGROUND: {
       BODY: COLORS.WHITE,
-      HEADER: COLORS.NEUTRAL,
+      HEADER: COLORS.WHITE,
     },
     BORDER: {
       HEADER: COLORS.NEUTRAL,
