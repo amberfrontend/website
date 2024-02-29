@@ -23,12 +23,6 @@ export default function Contact() {
           mizamberarmstrong
         </Link>
       </p>
-      <h3>CodePen</h3>
-      <p>
-        <Link href="https://codepen.io/amberarmstrong" external type="BODY">
-          amberarmstrong
-        </Link>
-      </p>
     </>
   );
 }
