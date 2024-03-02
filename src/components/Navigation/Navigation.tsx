@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { THEME } from "../../styles/theme";
 import { ThemeContext } from "../ThemeContext/ThemeContext";
 import "./Navigation.css";
 
