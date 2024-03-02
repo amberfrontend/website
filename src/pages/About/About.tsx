@@ -137,10 +137,9 @@ export default function About() {
         <h3>As a Person</h3>
         <p>
           The first thing people often notice about me is my enthusiasm. I have
-          a zest for life with an endless sense of curiosity. As a kid, I used
-          to dismantle my electronic toys and constantly asked the question,
-          "Why?" because I wanted to understand everything. That hasn't changed
-          much.
+          a zest for life with an endless sense of curiosity. The second thing
+          is usually my persistence. I'm tenacious when overcoming barriers and
+          figure out ways to get past them.
         </p>
         <p>
           For fun, I have many hobbies. I'm a huge music lover and former
