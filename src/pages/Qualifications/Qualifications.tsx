@@ -18,16 +18,19 @@ export default function Qualifications() {
       <div>
         <h2>Skills</h2>
         <ul>
-          <li>HTML</li>
-          <li>CSS, Sass, CSSinJS</li>
           <li>TypeScript, JavaScript (ES6), jQuery</li>
           <li>React, React hooks</li>
-          <li>Jest, Enzyme, Mocha, React Testing Library, Cypress</li>
+          <li>HTML</li>
+          <li>CSS, Sass, CSSinJS</li>
+          <li>Jest, Enzyme, Mocha, React Testing Library</li>
+          <li>Cypress</li>
+          <li>Percy</li>
+          <li>Git</li>
           <li>GraphQL, Apollo</li>
           <li>Redux, Redux Saga</li>
-          <li>Webpack, Babel</li>
+          <li>Webpack, Babel, Vite</li>
           <li>NVDA, JAWS, VoiceOver, TalkBack</li>
-          <li>WCAG 2.1 AA{standards}</li>
+          <li>Axe, WAVE, BrowserStack</li>
         </ul>
         <hr aria-hidden="true" />
         <h2>Certifications</h2>
@@ -157,6 +160,27 @@ export default function Qualifications() {
               development team by producing technical documentation and training
               videos for designers and developers
             </li>
+          </ul>
+        </p>
+      </div>
+      <hr aria-hidden="true" />
+      <div>
+        <h3>Senior Software Engineer</h3>
+        <h4>Community</h4>
+        <p>
+          <ul>
+            <li>
+              Built the internal design system as a member of the Frontend Guild
+            </li>
+            <li>
+              Implemented Shopify integration features and displayed store
+              metrics using Shopfiy’s API
+            </li>
+            <li>
+              Improved accessibility by auditing and remediating the onboarding
+              form, used by millions of users
+            </li>
+            <li>Migrated the application from JavaScript to TypeScript</li>
           </ul>
         </p>
       </div>
