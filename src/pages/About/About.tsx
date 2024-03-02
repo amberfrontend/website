@@ -26,6 +26,7 @@ export default function About() {
         </p>
         <p>You could say I'm a software engineeer who understands design.</p>
       </Block>
+      <hr aria-hidden="true" />
       <Block>
         <h2>Frontend Developer</h2>
         <h3>Frontend</h3>
@@ -41,6 +42,7 @@ export default function About() {
           I've written theme engines and utilities, developed APIs, and improved
           performance. I secretly love writing unit tests.
         </p>
+        <hr aria-hidden="true" />
         <h3>Design Systems</h3>
         <p>
           Great UX is my jam and I consider accessibility as a core component of
@@ -62,7 +64,8 @@ export default function About() {
           build iteratively in ways that avoid potential breaking changes in the
           future.
         </p>
-        <h3>Mentor</h3>
+        <hr aria-hidden="true" />
+        <h3>Mentoring</h3>
         <p>
           I was mentored by some engineers far smarter than me and now it's a
           joy to pay it forward and help others level up their skills. I'm a big
@@ -70,6 +73,7 @@ export default function About() {
           complexity.
         </p>
       </Block>
+      <hr aria-hidden="true" />
       <Block>
         <h2>Digital Accessibility</h2>
         <p>
@@ -83,7 +87,8 @@ export default function About() {
           a point in my career where I only want to work on software that
           prioritizes accessibility because it's the right thing to do.
         </p>
-        <h3>Technical Consultant</h3>
+        <hr aria-hidden="true" />
+        <h3>Accessibility Consulting</h3>
         <p>
           My main strength is on the technical side of accessibility. I provide
           guidance and creative solutions for some of the trickier accessibility
@@ -103,6 +108,7 @@ export default function About() {
                     But I prefer to build it right the first time.
                 </p> */}
       </Block>
+      <hr aria-hidden="true" />
       <Block>
         <h2>Soft Skills</h2>
         <h3>Communication</h3>
@@ -116,6 +122,7 @@ export default function About() {
           I also have strong writing skills from years as an English tutor and
           from writing classes.
         </p>
+        <hr aria-hidden="true" />
         <h3>At Work</h3>
         <p>
           I'm highly self-motivated and driven by impact. I prefer being held to
@@ -126,6 +133,7 @@ export default function About() {
           I'm T-shaped, which means I have both a deep level of expertise in my
           craft and a broad understanding across a number of adjascent topics.
         </p>
+        <hr aria-hidden="true" />
         <h3>As a Person</h3>
         <p>
           The first thing people often notice about me is my enthusiasm. I have
