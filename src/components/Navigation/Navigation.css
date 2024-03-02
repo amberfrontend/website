@@ -32,7 +32,6 @@
 }
 
 .NavLink.Logo a .LeftLetter {
-  color: #dd0099;
   margin-right: 0.2rem;
   transform: rotate(-90deg);
 }
