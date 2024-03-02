@@ -1,5 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Routes,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLightbulb, faMoon } from "@fortawesome/free-solid-svg-icons";
 
@@ -17,7 +22,13 @@ import Contact from "./pages/Contact/Contact";
 
 import "./App.scss";
 
-function App() {
+const router = createBrowserRouter([{ path: "*", Component: Root }]);
+
+export default function App() {
+  return <RouterProvider router={router} />;
+}
+
+function Root() {
   const [themeMode, setThemeMode] = useState(THEME.LIGHT);
   const toggleButtonLabel = useRef(THEME.LIGHT.COPY);
   const toggleIcon = useRef(<FontAwesomeIcon icon={faMoon} />);
@@ -46,40 +57,33 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
-        <ThemeContext.Provider value={themeMode}>
-          <Button className="Skip" onClick={focusMain} type="HEADER">
-            Skip to main content
-          </Button>
-          <Header>
-            <Navigation
-              themeToggleButton={
-                <Button
-                  ariaLabel={toggleButtonLabel.current}
-                  id="ToggleThemeButton"
-                  onClick={handleThemeToggle}
-                  type={"HEADER"}
-                >
-                  {toggleIcon.current}
-                </Button>
-              }
-            />
-          </Header>
-          <Main>
-            <Routes>
-              <Route path="/" element={<Home />}></Route>
-              <Route path="/about" element={<About />}></Route>
-              <Route
-                path="/qualifications"
-                element={<Qualifications />}
-              ></Route>
-              <Route path="/contact" element={<Contact />}></Route>
-            </Routes>
-          </Main>
-        </ThemeContext.Provider>
-      </BrowserRouter>
+      <ThemeContext.Provider value={themeMode}>
+        <Button className="Skip" onClick={focusMain} type="HEADER">
+          Skip to main content
+        </Button>
+        <Header>
+          <Navigation
+            themeToggleButton={
+              <Button
+                ariaLabel={toggleButtonLabel.current}
+                id="ToggleThemeButton"
+                onClick={handleThemeToggle}
+                type={"HEADER"}
+              >
+                {toggleIcon.current}
+              </Button>
+            }
+          />
+        </Header>
+        <Main>
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/qualifications" element={<Qualifications />}></Route>
+            <Route path="/contact" element={<Contact />}></Route>
+          </Routes>
+        </Main>
+      </ThemeContext.Provider>
     </div>
   );
 }
-
-export default App;
