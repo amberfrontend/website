@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLightbulb, faMoon } from "@fortawesome/free-solid-svg-icons";
 
@@ -46,11 +46,11 @@ function App() {
 
   return (
     <div className="App">
-      <ThemeContext.Provider value={themeMode}>
-        <Button className="Skip" onClick={focusMain} type="HEADER">
-          Skip to main content
-        </Button>
-        <Router>
+      <BrowserRouter>
+        <ThemeContext.Provider value={themeMode}>
+          <Button className="Skip" onClick={focusMain} type="HEADER">
+            Skip to main content
+          </Button>
           <Header>
             <Navigation
               themeToggleButton={
@@ -76,8 +76,8 @@ function App() {
               <Route path="/contact" element={<Contact />}></Route>
             </Routes>
           </Main>
-        </Router>
-      </ThemeContext.Provider>
+        </ThemeContext.Provider>
+      </BrowserRouter>
     </div>
   );
 }
