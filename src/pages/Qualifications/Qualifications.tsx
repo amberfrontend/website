@@ -4,9 +4,6 @@ import Link from "../../components/Link/Link";
 
 export default function Qualifications() {
   const pageName = "Qualifications";
-  const releaseDate = new Date("April, 2023");
-  const today = new Date();
-  const standards = today > releaseDate ? ", WCAG 2.2 AA" : null;
 
   useEffect(() => {
     document.title = `${siteName}${pageName}`;
