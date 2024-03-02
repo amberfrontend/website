@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { ThemeContext } from "../ThemeContext/ThemeContext";
 import "./Navigation.css";
@@ -27,27 +27,27 @@ export default function Navigation({ themeToggleButton }: NavigationProps) {
       <ul>
         <li>
           <StyledNavLink className="NavLink NavAbout Logo">
-            <Link to="/" type="HEADER">
+            <a href="/" type="HEADER">
               <div className="LogoWrapper">
                 <StyledLeftLetter className="LeftLetter">A</StyledLeftLetter>
                 <span aria-hidden={true}>/</span>
                 <span className="RightLetter">A</span>
               </div>
-            </Link>
+            </a>
           </StyledNavLink>
         </li>
         <li>
           <StyledNavLink className="NavLink NavAbout">
-            <Link to="/about" type="HEADER">
+            <a href="/about" type="HEADER">
               About
-            </Link>
+            </a>
           </StyledNavLink>
         </li>
         <li>
           <StyledNavLink className="NavLink NavExperience">
-            <Link to="/qualifications" type="HEADER">
+            <a href="/qualifications" type="HEADER">
               Qualifications
-            </Link>
+            </a>
           </StyledNavLink>
         </li>
         {/* 
@@ -58,9 +58,9 @@ export default function Navigation({ themeToggleButton }: NavigationProps) {
                 </li> */}
         <li>
           <StyledNavLink className="NavLink NavContact">
-            <Link to="/contact" type="HEADER">
+            <a href="/contact" type="HEADER">
               Contact
-            </Link>
+            </a>
           </StyledNavLink>
         </li>
         <li>{themeToggleButton}</li>
