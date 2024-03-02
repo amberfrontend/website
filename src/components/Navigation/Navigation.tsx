@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-
+import { THEME } from "../../styles/theme";
 import { ThemeContext } from "../ThemeContext/ThemeContext";
 import "./Navigation.css";
 
@@ -19,6 +19,10 @@ export default function Navigation({ themeToggleButton }: NavigationProps) {
     }
   `;
 
+  const StyledLeftLetter = styled.span`
+    color: ${themeContext.TEXT.LOGO};
+  `;
+
   return (
     <nav aria-label="main" className="NavMain">
       <ul>
@@ -26,7 +30,7 @@ export default function Navigation({ themeToggleButton }: NavigationProps) {
           <StyledNavLink className="NavLink NavAbout Logo">
             <Link to="/" type="HEADER">
               <div className="LogoWrapper">
-                <span className="LeftLetter">A</span>
+                <StyledLeftLetter className="LeftLetter">A</StyledLeftLetter>
                 <span aria-hidden={true}>/</span>
                 <span className="RightLetter">A</span>
               </div>

@@ -1,9 +1,9 @@
 const COLORS = {
   BLACK: "#000",
   NEUTRAL: "#eeeadc",
-  PRIMARY: "#dd0099",
+  PRIMARY: "#d44102",
   NEAR_BLACK: "#170901",
-  SECONDARY: "#ffab01",
+  SECONDARY: "#1cc8d7",
   WHITE: "#fff",
 };
 
@@ -37,6 +37,7 @@ export const THEME = {
     TEXT: {
       BODY: COLORS.WHITE,
       HEADER: COLORS.WHITE,
+      LOGO: COLORS.PRIMARY,
     },
   },
   LIGHT: {
@@ -65,6 +66,7 @@ export const THEME = {
     TEXT: {
       BODY: COLORS.BLACK,
       HEADER: COLORS.BLACK,
+      LOGO: COLORS.PRIMARY,
     },
     SHADOW: {
       HEADER: COLORS.WHITE,
