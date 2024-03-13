@@ -122,7 +122,7 @@ export default function Qualifications() {
       <Block>
         <h3>Accessibility Engineer</h3>
         <h4>Allyant</h4>
-        <Flex justifyContent='FLEX_START' gap='0.5rem'>
+        <Flex justifyContent='FLEX_START' flexWrap='WRAP' gap='0.5rem'>
           <Tag>
             <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
               <FontAwesomeIcon icon={faUniversalAccess} /> a11y
