@@ -1,0 +1,62 @@
+.NavMain {
+  display: flex;
+}
+
+.NavMain ul {
+  align-items: center;
+  display: flex;
+  height: 5rem;
+  justify-content: space-around;
+  list-style: none;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin: 0;
+  padding-inline-start: 0;
+  width: 100%;
+}
+
+.NavLink {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.NavLink .LogoWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.NavLink.Logo {
+  font-family: 'Zen Kurenaido';
+  font-size: 1.4rem;
+  display: block;
+}
+
+.NavLink .LogoWrapper .LeftLetter {
+  margin-right: 0.2rem;
+  transform: rotate(-90deg);
+}
+
+.NavLink .LogoWrapper .RightLetter {
+  margin-left: 0.2rem;
+  transform: rotate(90deg);
+}
+
+@media screen and (min-width: 20.0625rem) {
+  .NavLink a:focus,
+  .NavLink a:hover {
+    background: transparent;
+    outline: 0.1rem solid;
+    outline-offset: 0.05rem;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 20rem) {
+  .NavLink a:focus,
+  .NavLink a:hover {
+    background: transparent;
+    outline: 0.2rem solid;
+    outline-offset: 0.05rem;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,20 @@
+.MainWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 20rem) {
+  main {
+    width: 100%;
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 20.0625rem) {
+  main {
+    width: 80%;
+    max-width: 40rem;
+    padding: 4rem;
+  }
+}

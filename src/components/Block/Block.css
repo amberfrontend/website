@@ -1,0 +1,15 @@
+.BlockWrapper {
+  margin-block-end: 3rem;
+}
+
+@media screen and (min-width: 20.0625rem) {
+  .BlockWrapper {
+    margin-block-end: 3rem;
+  }
+}
+
+@media screen and (max-width: 20rem) {
+  .BlockWrapper {
+    max-width: 90%;
+  }
+}
