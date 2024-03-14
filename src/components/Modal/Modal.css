@@ -9,13 +9,13 @@
 
 @media screen and (max-width: 20rem) {
   .ModalContainer {
-    padding: 1rem;
+    padding: 2rem;
   }
 }
 
 @media screen and (min-width: 20.001rem) and (max-width: 40rem) {
   .ModalContainer {
-    padding: 1rem;
+    padding: 2.2rem;
   }
 }
 
