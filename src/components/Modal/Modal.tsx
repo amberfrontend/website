@@ -1,4 +1,4 @@
-import { ReactNode, useEffect, useState, useCallback } from 'react';
+import { ReactNode, useEffect, useState, useCallback, useId } from 'react';
 import classNames from 'classnames';
 
 import Portal from '../Portal/Portal';
@@ -43,6 +43,8 @@ export default function Modal({
     [isOpen],
   );
 
+  const portalId = useId();
+
   return (
     <>
       <Button
@@ -53,7 +55,7 @@ export default function Modal({
       >
         {triggerButton.children}
       </Button>
-      <Portal wrapperId='modal-portal-wrapper'>
+      <Portal wrapperId={portalId}>
         <div className={classNames('ModalOuterContainer', { Open: isOpen })}>
           {isOpen && (
             <ModalContent
