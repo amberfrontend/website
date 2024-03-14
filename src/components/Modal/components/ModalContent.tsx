@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, useId } from 'react';
 import styled from 'styled-components';
 
 import { COLORS } from '../../../styles/theme';
@@ -19,7 +19,7 @@ export default function ModalContent({
   title,
   onClose,
 }: ModalContentProps) {
-  const modalWrapperId = 'modal-wrapper';
+  const modalWrapperId = useId();
 
   const StyledModal = styled.div`
     background: ${COLORS.WHITE};

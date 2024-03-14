@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import { useCallback, useId } from 'react';
 import styled from 'styled-components';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -21,7 +21,7 @@ export default function ModalHeader({ onClose, title }: ModalHeaderProps) {
     margin-bottom: 2rem;
   `;
 
-  const closeButtonId = 'modal-close-button';
+  const closeButtonId = useId();
 
   return (
     <StyledModalHeader className='ModalHeader'>
