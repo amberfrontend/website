@@ -21,7 +21,7 @@ export default function Layout({ columns, left, right }: LayoutProps) {
   `;
 
   return (
-    <Flex justifyContent='SPACE_BETWEEN' alignItems='FLEX_START' gap='2rem'>
+    <Flex justifyContent='space-between' alignItems='flex-start' gap='2rem'>
       <StyledLeftColumn>{left}</StyledLeftColumn>
       <StyledRightColumn>{right}</StyledRightColumn>
     </Flex>

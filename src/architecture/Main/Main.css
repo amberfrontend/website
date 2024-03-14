@@ -7,21 +7,3 @@ main {
   width: 100%;
   max-width: 100%;
 }
-
-@media screen and (max-width: 20rem) {
-  main {
-    padding: 1rem;
-  }
-}
-
-@media screen and (min-width: 20.001rem) and (max-width: 40rem) {
-  main {
-    padding: 1rem;
-  }
-}
-
-@media screen and (min-width: 40.001rem) {
-  main {
-    padding: 3rem;
-  }
-}

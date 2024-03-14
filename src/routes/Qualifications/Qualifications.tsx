@@ -69,9 +69,9 @@ export default function Qualifications() {
         <h2>Professional Experience &amp; Technology</h2>
         <h3>Lead Digital Accessibility Specialist</h3>
         <h4>Scotiabank</h4>
-        <Flex justifyContent='FLEX_START' gap='0.5rem'>
+        <Flex justifyContent='flex-start' gap='0.5rem'>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               <FontAwesomeIcon icon={faUniversalAccess} /> a11y
             </Flex>
           </Tag>
@@ -83,29 +83,29 @@ export default function Qualifications() {
       <Block>
         <h3>Senior Software Engineer (Accessibility) at Achievers</h3>
         <h4>Achievers</h4>
-        <Flex justifyContent='FLEX_START' flexWrap='WRAP' gap='0.5rem'>
+        <Flex justifyContent='flex-start' flexWrap='wrap' gap='0.5rem'>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               <FontAwesomeIcon icon={faUniversalAccess} /> a11y
             </Flex>
           </Tag>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               <FontAwesomeIcon icon={faReact} /> React
             </Flex>
           </Tag>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               <FontAwesomeIcon icon={faJs} /> JavaScript
             </Flex>
           </Tag>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               <FontAwesomeIcon icon={faSass} /> SASS
             </Flex>
           </Tag>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               <FontAwesomeIcon icon={faGithub} /> GitHub
             </Flex>
           </Tag>
@@ -122,19 +122,19 @@ export default function Qualifications() {
       <Block>
         <h3>Accessibility Engineer</h3>
         <h4>Allyant</h4>
-        <Flex justifyContent='FLEX_START' flexWrap='WRAP' gap='0.5rem'>
+        <Flex justifyContent='flex-start' flexWrap='wrap' gap='0.5rem'>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               <FontAwesomeIcon icon={faUniversalAccess} /> a11y
             </Flex>
           </Tag>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               <FontAwesomeIcon icon={faHtml5} /> HTML
             </Flex>
           </Tag>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               <FontAwesomeIcon icon={faJs} /> JavaScript
             </Flex>
           </Tag>
@@ -146,34 +146,34 @@ export default function Qualifications() {
       <Block>
         <h3>Senior Software Engineer</h3>
         <h4>Xapo Bank</h4>
-        <Flex justifyContent='FLEX_START' flexWrap='WRAP' gap='0.5rem'>
+        <Flex justifyContent='flex-start' flexWrap='wrap' gap='0.5rem'>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               <FontAwesomeIcon icon={faReact} /> React
             </Flex>
           </Tag>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               <FontAwesomeIcon icon={faJs} /> JavaScript
             </Flex>
           </Tag>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               TypeScript
             </Flex>
           </Tag>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               Redux
             </Flex>
           </Tag>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               Redux Saga
             </Flex>
           </Tag>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               Styled Components
             </Flex>
           </Tag>
@@ -183,39 +183,39 @@ export default function Qualifications() {
       <Block>
         <h3>Lead Frontend Developer</h3>
         <h4>Level Access</h4>
-        <Flex justifyContent='FLEX_START' flexWrap='WRAP' gap='0.5rem'>
+        <Flex justifyContent='flex-start' flexWrap='wrap' gap='0.5rem'>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               <FontAwesomeIcon icon={faUniversalAccess} /> a11y
             </Flex>
           </Tag>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               <FontAwesomeIcon icon={faReact} /> React
             </Flex>
           </Tag>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               <FontAwesomeIcon icon={faJs} /> JavaScript
             </Flex>
           </Tag>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               Knockout.js
             </Flex>
           </Tag>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               Cypress
             </Flex>
           </Tag>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               <FontAwesomeIcon icon={faGithub} /> GitHub
             </Flex>
           </Tag>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               WCAG
             </Flex>
           </Tag>
@@ -225,29 +225,29 @@ export default function Qualifications() {
       <Block>
         <h3>Frontend UX Developer</h3>
         <h4>Shopify</h4>
-        <Flex justifyContent='FLEX_START' flexWrap='WRAP' gap='0.5rem'>
+        <Flex justifyContent='flex-start' flexWrap='wrap' gap='0.5rem'>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               <FontAwesomeIcon icon={faUniversalAccess} /> a11y
             </Flex>
           </Tag>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               <FontAwesomeIcon icon={faReact} /> React
             </Flex>
           </Tag>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               TypeScript
             </Flex>
           </Tag>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               <FontAwesomeIcon icon={faSass} /> SASS
             </Flex>
           </Tag>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               <FontAwesomeIcon icon={faGithub} /> GitHub
             </Flex>
           </Tag>
@@ -264,25 +264,25 @@ export default function Qualifications() {
       <Block>
         <h3>Frontend Developer</h3>
         <h4>MoneyMover</h4>
-        <Flex justifyContent='FLEX_START' flexWrap='WRAP' gap='0.5rem'>
+        <Flex justifyContent='flex-start' flexWrap='wrap' gap='0.5rem'>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               jQuery
             </Flex>
           </Tag>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               <FontAwesomeIcon icon={faCss3} /> CSS
             </Flex>
           </Tag>
 
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               <FontAwesomeIcon icon={faPython} /> Python
             </Flex>
           </Tag>
           <Tag>
-            <Flex justifyContent='CENTER' alignItems='CENTER' gap='0.5rem'>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               <FontAwesomeIcon icon={faGitlab} /> GitLab
             </Flex>
           </Tag>
