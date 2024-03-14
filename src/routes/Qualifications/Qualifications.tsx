@@ -81,7 +81,7 @@ export default function Qualifications() {
         <hr aria-hidden='true' />
       </Block>
       <Block>
-        <h3>Senior Software Engineer (Accessibility) at Achievers</h3>
+        <h3>Senior Software Engineer (Accessibility)</h3>
         <h4>Achievers</h4>
         <Flex justifyContent='flex-start' flexWrap='wrap' gap='0.5rem'>
           <Tag>
