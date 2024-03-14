@@ -13,11 +13,13 @@ export default function Root() {
   document.title = `Amber Armstrong | ${pageTitleCase}`;
 
   return (
-    <Header>
-      <Navigation />
+    <>
+      <Header>
+        <Navigation />
+      </Header>
       <Main>
         <Outlet />
       </Main>
-    </Header>
+    </>
   );
 }

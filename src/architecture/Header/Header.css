@@ -4,3 +4,21 @@ header {
   top: 0;
   width: 100%;
 }
+
+@media screen and (max-width: 20rem) {
+  header {
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 20.001rem) and (max-width: 40rem) {
+  header {
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 40.001rem) {
+  header {
+    padding: 3rem;
+  }
+}

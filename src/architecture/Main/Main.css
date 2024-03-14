@@ -3,18 +3,25 @@
   justify-content: center;
 }
 
+main {
+  width: 100%;
+  max-width: 100%;
+}
+
 @media screen and (max-width: 20rem) {
   main {
-    width: 100%;
-    max-width: 100%;
-    padding: 1.5rem;
+    padding: 1rem;
   }
 }
 
-@media screen and (min-width: 20.0625rem) {
+@media screen and (min-width: 20.001rem) and (max-width: 40rem) {
   main {
-    width: 80%;
-    max-width: 40rem;
-    padding: 4rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 40.001rem) {
+  main {
+    padding: 3rem;
   }
 }
