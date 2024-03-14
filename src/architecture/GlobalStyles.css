@@ -3,6 +3,11 @@
   main {
     padding: 2rem;
   }
+
+  html,
+  body {
+    scrollbar-width: none;
+  }
 }
 
 @media screen and (min-width: 20.001rem) and (max-width: 40rem) {
