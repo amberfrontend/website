@@ -1,0 +1,26 @@
+.ModalOuterContainer {
+  opacity: 0;
+}
+
+.ModalOuterContainer.Open {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 20rem) {
+  .ModalContainer {
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 20.001rem) and (max-width: 40rem) {
+  .ModalContainer {
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 40.001rem) {
+  .ModalContainer {
+    padding: 3rem;
+  }
+}

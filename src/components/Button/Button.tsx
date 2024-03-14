@@ -1,8 +1,11 @@
-import { ReactNode } from 'react';
+import { forwardRef, ReactNode } from 'react';
+import styled from 'styled-components';
 
-type ButtonType = 'BODY' | 'HEADER';
+import { COLORS } from '../../styles/theme';
 
-export interface ButtonProps {
+export type ButtonType = 'BODY' | 'HEADER';
+
+interface ButtonProps {
   ariaLabel?: string | undefined;
   children: ReactNode;
   className?: string;
@@ -11,27 +14,46 @@ export interface ButtonProps {
   type: ButtonType;
 }
 
-export default function Button({
-  ariaLabel = undefined,
-  children,
-  className,
-  id,
-  onClick,
-}: // type,
-ButtonProps) {
-  const handleOnClick = () => {
-    onClick();
-  };
+export type ButtonRef = HTMLButtonElement;
 
-  return (
-    <button
-      aria-label={ariaLabel}
-      className={className}
-      id={id}
-      onClick={handleOnClick}
-      title={ariaLabel}
-    >
-      {children}
-    </button>
-  );
-}
+const Button = forwardRef<ButtonRef, ButtonProps>(
+  ({ ariaLabel = undefined, children, className, id, type, onClick }, ref) => {
+    const StyledButton = styled.button`
+      background: ${type === 'BODY' ? COLORS.PRIMARY : COLORS.NEAR_BLACK};
+      color: ${COLORS.WHITE};
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 1rem;
+      border-radius: 0.25rem;
+      border: none;
+      padding: 0.3rem 0.5rem;
+
+      &:focus,
+      &:active,
+      &:hover {
+        outline: 0.15rem solid
+          ${type === 'BODY' ? COLORS.PRIMARY : COLORS.NEAR_BLACK};
+        outline-offset: 0.1rem;
+      }
+    `;
+
+    const handleOnClick = () => {
+      onClick();
+    };
+
+    return (
+      <StyledButton
+        aria-label={ariaLabel}
+        className={className}
+        id={id}
+        title={ariaLabel}
+        ref={ref}
+        onClick={handleOnClick}
+      >
+        {children}
+      </StyledButton>
+    );
+  },
+);
+
+export default Button;

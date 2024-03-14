@@ -14,6 +14,7 @@ interface LinkProps {
   href: string;
   skip?: boolean;
   type: LinkType;
+  onClick?(): void;
 }
 
 export default function Link({
@@ -23,6 +24,7 @@ export default function Link({
   external = false,
   href,
   type,
+  onClick,
 }: LinkProps) {
   const externalMarkup = external ? (
     <span className='visually-hidden'>Opens in a new window</span>
@@ -55,6 +57,7 @@ export default function Link({
         aria-current={ariaCurrent}
         target={external ? '_blank' : '_self'}
         rel='noreferrer'
+        onClick={onClick}
       >
         {children}
         {externalMarkup}

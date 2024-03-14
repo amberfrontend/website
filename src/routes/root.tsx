@@ -4,6 +4,8 @@ import Header from '../architecture/Header/Header';
 import Navigation from '../architecture/Navigation/Navigation';
 import Main from '../architecture/Main/Main';
 
+import '../architecture/GlobalStyles.css';
+
 export default function Root() {
   const location = useLocation();
   const pageTitle = location.pathname.substring(1);

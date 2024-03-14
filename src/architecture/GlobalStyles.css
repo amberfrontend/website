@@ -1,0 +1,20 @@
+@media screen and (max-width: 20rem) {
+  header,
+  main {
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 20.001rem) and (max-width: 40rem) {
+  header,
+  main {
+    padding: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 40.001rem) {
+  header,
+  main {
+    padding: 3rem;
+  }
+}
