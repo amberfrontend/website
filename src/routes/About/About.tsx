@@ -23,20 +23,6 @@ export default function About() {
           practices. I've built enterprise-level software that millions of
           people use.
         </p>
-        <p>
-          When I was at{' '}
-          <Link href='https://www.shopify.com/' external type='BODY'>
-            Shopify
-          </Link>
-          , working on the{' '}
-          <Link href='https://polaris.shopify.com/' external type='BODY'>
-            Polaris design system
-          </Link>
-          , I discovered digital accessibility and decided to add it to my
-          skillset. I strategically worked on projects that gave me hands-on
-          accessibility experience. I'm now an expert at conformance testing,
-          remediating, and building apps to WCAG standards.
-        </p>
       </Block>
       <Block>
         <h2>Feature Development</h2>
@@ -50,36 +36,60 @@ export default function About() {
         </p>
       </Block>
       <Block>
+        <h2>Performance</h2>
+        <p>
+          Did you know that if an app takes more than 1 second to load, users
+          perceive it to be slow and the delay can lower conversion by more than
+          10%? Users expect fast and I believe it's a big component of
+          delivering great UX. When I build on the frontend, I test the
+          performance of my code. I implement techniques to increase
+          performance, like preventing unnecessary re-renders, offloading tasks
+          to the server, debouncing expensive tasks, memoizing values, and
+          initializing objects in a performant way.
+        </p>
+      </Block>
+      <Block>
         <h2>Design Systems and UX Development</h2>
         <p>
-          I absolutely love great UX, so I'm a great fit for design system
-          engineering. I've worked on three component libraries, maturing and
-          maintaining them, as well as remediating and building accessible
-          components. I've built complex components, like responsive and
-          sortable data tables, modals with focus trap, datepickers, filters
-          &amp; search, animations, comboboxes, context, and more.
+          I absolutely love great UX, so I love design system engineering. I've
+          worked on three component libraries, maturing and maintaining them, as
+          well as remediating and building accessible components. I've built
+          complex components, like responsive and sortable data tables, modals
+          with focus trap, datepickers, filters &amp; search, animations,
+          comboboxes, context, and more.
         </p>
         <p>
           Component libraries should be flexible and collaborative, without
           compromising on consistency, so I aim to expose the right configurable
-          pieces, while installing guardrails and fallbacks. I employ systems
-          design principles, like composability and scalability. I attempt to
-          build iteratively in ways that avoid potential breaking changes in the
+          pieces, while installing guardrails and fallbacks. I think about
+          composability, scalability and flexibility. I attempt to build
+          iteratively in ways that avoid potential breaking changes in the
           future.
-        </p>
-        <p>
-          I consider accessibility as a core component of UX. Design systems are
-          the foundation of any piece of software, so they're a perfect place to
-          define the standards that will affect the entire app.
         </p>
       </Block>
       <Block>
         <h2>Digital Accessibility</h2>
         <p>
-          I'm strong on the technical side of accessibility. I understand how
-          and when to use ARIA attributes and how to embed accessibility into
-          modern design patterns, like animation, overlays, interactive
-          components, drop and drop, forms, tables, and other dynamic content.
+          When I was at{' '}
+          <Link href='https://www.shopify.com/' external type='BODY'>
+            Shopify
+          </Link>
+          , working on the{' '}
+          <Link href='https://polaris.shopify.com/' external type='BODY'>
+            Polaris design system
+          </Link>
+          , I discovered digital accessibility and fell in love with it. I
+          consider accessibility as a core component of UX. I strategically
+          worked on projects that gave me hands-on accessibility experience. I'm
+          now an expert at conformance testing, remediating, and building apps
+          to WCAG standards.
+        </p>
+        <p>
+          I understand how and when to use ARIA attributes, labels, landmarks,
+          and semantic markup. I can embed accessibility into modern design
+          patterns, like animation, overlays, interactive components, drop and
+          drop, forms, tables, and other dynamic content. I'm trained in
+          assistive technology and accessibility tools.
         </p>
         <hr aria-hidden='true' />
       </Block>
@@ -88,11 +98,14 @@ export default function About() {
         <h2>Soft Skills</h2>
         <h3>As a Colleague</h3>
         <p>
-          I'm a friendly and bubbly person who puts effort into gaining trust
-          and building good rapport with my colleagues. I'm highly
-          self-motivated and driven by impact. I prefer being held to high
-          standards and being challenged in interesting ways. I thrive in a
-          collaborative environment.
+          I'm a go-getter, by nature. I'm highly self-motivated and thrive on
+          making an impact. I'm insatiably curious and always want to improve
+          things. I prefer being held to high standards and being challenged in
+          ways that stretch me.
+        </p>
+        <p>
+          I'm friendly and building good rapport with my colleagues is important
+          to me. I love helping and thrive in a collaborative environment.
         </p>
         <p>
           I'm T-shaped, which means I have both a deep level of expertise in my
@@ -109,19 +122,12 @@ export default function About() {
           I also have strong writing skills from years as an English tutor and
           from writing classes.
         </p>
-
         <h3>As a Person</h3>
         <p>
-          The first thing people usually notice about me is my enthusiasm. I
-          have a zest for life with an endless sense of curiosity. The second
-          thing is often my persistence. I've overcome many barriers with
-          resilience and tenacity.
-        </p>
-        <p>
-          I'm a go-getter who thrives on impact. My friends tell me, "You get
-          sh*t done!". I like to find efficient, intelligent solutions to
-          problems. I stretch beyond my comfort zone to constantly improve
-          myself and what I'm working on.
+          The first thing people usually notice about me is my enthusiasm and my
+          zest for life. The second thing is often my persistence. I've overcome
+          many barriers with resilience and tenacity. I believe in a growth
+          mindset.
         </p>
         <p>
           For fun, I have too many hobbies, like music, cooking, cake
