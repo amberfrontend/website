@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import styled from 'styled-components';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -15,16 +15,20 @@ export default function Navigation() {
 
   const responsizeWidth = 700;
 
-  useEffect(() => {
-    const handleResize = () => {
+  const handleResize = useCallback(() => {
+    const timeoutId = setTimeout(() => {
       setWindowSize(window.innerWidth);
-    };
+    }, 300);
 
+    return () => clearTimeout(timeoutId);
+  }, []);
+
+  useEffect(() => {
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const StyledLeftLetter = styled.span`
     color: ${THEME_LIGHT.TEXT.LOGO};
