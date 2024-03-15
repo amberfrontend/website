@@ -41,22 +41,24 @@
   transform: rotate(90deg);
 }
 
+.NavLink a:focus,
+.NavLink a:hover {
+  background: transparent;
+  outline: 0.1rem solid;
+  outline-offset: 0.05rem;
+  text-decoration: none;
+}
+
 @media screen and (min-width: 20.0625rem) {
   .NavLink a:focus,
   .NavLink a:hover {
-    background: transparent;
     outline: 0.1rem solid;
-    outline-offset: 0.05rem;
-    text-decoration: none;
   }
 }
 
 @media screen and (max-width: 20rem) {
   .NavLink a:focus,
   .NavLink a:hover {
-    background: transparent;
     outline: 0.2rem solid;
-    outline-offset: 0.05rem;
-    text-decoration: none;
   }
 }
