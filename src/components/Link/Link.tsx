@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link as RouterLink } from 'react-router-dom';
 
-import { THEME_LIGHT } from '../../styles/theme';
+import { COLORS } from '../../styles/theme';
 
 type LinkType = 'BODY' | 'HEADER';
 
@@ -34,18 +34,25 @@ export default function Link({
 
   const StyledLinkWrapper = styled.span`
     a {
-      color: ${type === 'HEADER'
-        ? THEME_LIGHT.LINK.HEADER
-        : THEME_LIGHT.LINK.BODY};
+      color: ${COLORS.BLACK};
+      border-bottom-style: ${type === 'BODY' && 'solid'};
+      border-bottom-width: ${type === 'BODY' && '0.2rem'};
+      border-bottom-color: ${type === 'BODY' && COLORS.PRIMARY};
       font-weight: 700;
       text-decoration: none;
-      border-radius: 0.2rem;
     }
 
     a:hover,
     a:active,
     a:focus {
-      outline: 0.1rem solid;
+      border-radius: 0.2rem;
+      outline: 0.2rem solid ${type === 'HEADER' ? COLORS.BLACK : COLORS.PRIMARY};
+      outline-offset: 0.04rem;
+      border-bottom: none;
+    }
+
+    a:visited {
+      color: ${COLORS.BLACK};
     }
   `;
 
