@@ -1,29 +1,61 @@
 import { ReactNode } from 'react';
 import styled from 'styled-components';
 
+import useWindowWidth from '../../custom-hooks/useWindowWidth';
+
 import Flex from '../../components/Flex/Flex';
 
-type Colums = 'TWO_HALVES' | 'ONE_THIRD_TWO_THIRDS';
+type TwoHalves = {
+  left: '50%';
+  right: '50%';
+};
+
+type ThirdTwoThirds = {
+  left: '35%';
+  right: '65%';
+};
+
+type TwoThirdsThird = {
+  left: '65%';
+  right: '35%';
+};
+
+type Layout = TwoHalves | ThirdTwoThirds | TwoThirdsThird;
 
 interface LayoutProps {
-  columns: Colums;
+  layout: Layout;
   left: ReactNode;
   right: ReactNode;
 }
 
-export default function Layout({ columns, left, right }: LayoutProps) {
-  const StyledLeftColumn = styled.div`
-    width: ${columns === 'ONE_THIRD_TWO_THIRDS' ? '35%' : '50%'};
+export default function Layout({ layout, left, right }: LayoutProps) {
+  const isMobileWeb = useWindowWidth();
+
+  const StyledLeft = styled.div`
+    width: ${layout.left};
+
+    @media (min-width: 1rem) and (max-width: 56rem) {
+      width: 100%;
+    }
   `;
 
-  const StyledRightColumn = styled.div`
-    width: ${columns === 'ONE_THIRD_TWO_THIRDS' ? '65%' : '50%'};
+  const StyledRight = styled.div`
+    width: ${layout.right};
+
+    @media (min-width: 1rem) and (max-width: 56rem) {
+      width: 100%;
+    }
   `;
 
   return (
-    <Flex justifyContent='space-between' alignItems='flex-start' gap='2rem'>
-      <StyledLeftColumn>{left}</StyledLeftColumn>
-      <StyledRightColumn>{right}</StyledRightColumn>
+    <Flex
+      justifyContent='space-between'
+      alignItems='flex-start'
+      gap='2rem'
+      flexDirection={isMobileWeb ? 'column' : 'row'}
+    >
+      <StyledLeft>{left}</StyledLeft>
+      <StyledRight>{right}</StyledRight>
     </Flex>
   );
 }

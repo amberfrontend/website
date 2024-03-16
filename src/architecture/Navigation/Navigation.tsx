@@ -1,5 +1,6 @@
-import { useEffect, useState, useCallback } from 'react';
 import styled from 'styled-components';
+
+import useWindowWidth from '../../custom-hooks/useWindowWidth';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -11,24 +12,7 @@ import { THEME_LIGHT } from '../../styles/theme';
 import './Navigation.css';
 
 export default function Navigation() {
-  const [windowSize, setWindowSize] = useState(window.innerWidth);
-
-  const responsizeWidth = 700;
-
-  const handleResize = useCallback(() => {
-    const timeoutId = setTimeout(() => {
-      setWindowSize(window.innerWidth);
-    }, 300);
-
-    return () => clearTimeout(timeoutId);
-  }, []);
-
-  useEffect(() => {
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  const isMobileWeb = useWindowWidth();
 
   const StyledLeftLetter = styled.span`
     color: ${THEME_LIGHT.TEXT.LOGO};
@@ -39,13 +23,11 @@ export default function Navigation() {
 
     ul {
       display: flex;
-      align-items: ${windowSize <= responsizeWidth ? 'flex-start' : 'center'};
-      flex-direction: ${windowSize <= responsizeWidth ? 'column' : 'row'};
-      justify-content: ${windowSize <= responsizeWidth
-        ? 'flex-start'
-        : 'space-around'};
-      gap: ${windowSize <= responsizeWidth ? '1rem' : '0'};
-      height: ${windowSize <= responsizeWidth ? '100vh' : '5rem'};
+      align-items: ${isMobileWeb ? 'flex-start' : 'center'};
+      flex-direction: ${isMobileWeb ? 'column' : 'row'};
+      justify-content: ${isMobileWeb ? 'flex-start' : 'space-around'};
+      gap: ${isMobileWeb ? '1rem' : '0'};
+      height: ${isMobileWeb ? '100vh' : '5rem'};
       list-style: none;
       padding-inline-start: 0;
       margin-block-end: 0;
@@ -59,12 +41,12 @@ export default function Navigation() {
     <StyledNav aria-label='main' className='NavMain'>
       <ul>
         <li>
-          {windowSize <= responsizeWidth ? (
-            <Link href={`/`} type='HEADER' className='NavLink'>
+          {isMobileWeb ? (
+            <Link href={`/`} type='header' className='NavLink'>
               Home
             </Link>
           ) : (
-            <Link href={`/`} type='HEADER' className='NavLink Logo'>
+            <Link href={`/`} type='header' className='NavLink Logo'>
               <span className='LogoWrapper'>
                 <StyledLeftLetter className='LeftLetter'>A</StyledLeftLetter>
                 <span aria-hidden={true}>/</span>
@@ -74,17 +56,17 @@ export default function Navigation() {
           )}
         </li>
         <li>
-          <Link href={`/about`} type='HEADER' className='NavLink'>
+          <Link href={`/about`} type='header' className='NavLink'>
             About
           </Link>
         </li>
         <li>
-          <Link href={`/qualifications`} type='HEADER' className='NavLink'>
+          <Link href={`/qualifications`} type='header' className='NavLink'>
             Qualifications
           </Link>
         </li>
         <li>
-          <Link href={`/contact`} type='HEADER' className='NavLink'>
+          <Link href={`/contact`} type='header' className='NavLink'>
             Contact
           </Link>
         </li>
@@ -92,25 +74,24 @@ export default function Navigation() {
     </StyledNav>
   );
 
-  const menuMarkup =
-    windowSize <= responsizeWidth ? (
-      <div>
-        <Flex justifyContent='flex-start'>
-          <Modal
-            title='Main menu'
-            isNav={true}
-            triggerButton={{
-              type: 'HEADER',
-              children: <FontAwesomeIcon icon={faBars} />,
-            }}
-          >
-            {linksMarkup}
-          </Modal>
-        </Flex>
-      </div>
-    ) : (
-      linksMarkup
-    );
+  const menuMarkup = isMobileWeb ? (
+    <div>
+      <Flex justifyContent='flex-start'>
+        <Modal
+          title='Main menu'
+          isNav={true}
+          triggerButton={{
+            type: 'header',
+            children: <FontAwesomeIcon icon={faBars} />,
+          }}
+        >
+          {linksMarkup}
+        </Modal>
+      </Flex>
+    </div>
+  ) : (
+    linksMarkup
+  );
 
   return menuMarkup;
 }

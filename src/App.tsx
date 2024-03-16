@@ -6,10 +6,10 @@ import './App.css';
 function App() {
   return (
     <>
-      <Link href='/' type='BODY'>
+      <Link href='/' type='body'>
         Link
       </Link>
-      <Button type='BODY' onClick={() => {}}>
+      <Button type='body' onClick={() => {}}>
         Button
       </Button>
     </>

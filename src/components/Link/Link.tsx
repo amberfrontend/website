@@ -4,7 +4,7 @@ import { Link as RouterLink } from 'react-router-dom';
 
 import { COLORS } from '../../styles/theme';
 
-type LinkType = 'BODY' | 'HEADER';
+type LinkType = 'body' | 'header';
 
 interface LinkProps {
   children: React.ReactNode;
@@ -35,9 +35,9 @@ export default function Link({
   const StyledLinkWrapper = styled.span`
     a {
       color: ${COLORS.BLACK};
-      border-bottom-style: ${type === 'BODY' && 'solid'};
-      border-bottom-width: ${type === 'BODY' && '0.2rem'};
-      border-bottom-color: ${type === 'BODY' && COLORS.PRIMARY};
+      border-bottom-style: ${type === 'body' && 'solid'};
+      border-bottom-width: ${type === 'body' && '0.2rem'};
+      border-bottom-color: ${type === 'body' && COLORS.PRIMARY};
       font-weight: 700;
       text-decoration: none;
     }
@@ -46,7 +46,7 @@ export default function Link({
     a:active,
     a:focus {
       border-radius: 0.2rem;
-      outline: 0.2rem solid ${type === 'HEADER' ? COLORS.BLACK : COLORS.PRIMARY};
+      outline: 0.2rem solid ${type === 'header' ? COLORS.BLACK : COLORS.PRIMARY};
       outline-offset: 0.04rem;
       border-bottom: none;
     }
