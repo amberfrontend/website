@@ -11,20 +11,6 @@ export default function About() {
     <>
       <h1>About</h1>
       <Block>
-        <p>
-          I've been working on the web for a couple of decades, so I'm a diverse
-          and well-rounded developer. I once designed logos, websites, and
-          company branding, but my love is programming, so I became a Frontend
-          Developer.
-        </p>
-        <p>
-          To be more versatile, I deliberately broadened my skillset by working
-          in a few high impact roles, using cutting-edge tools and best
-          practices. I've built enterprise-level software that millions of
-          people use.
-        </p>
-      </Block>
-      <Block>
         <h2>Feature Development</h2>
         <p>
           I've built full features for enterprise apps with millions of users,
@@ -71,11 +57,11 @@ export default function About() {
         <h2>Digital Accessibility</h2>
         <p>
           When I was at{' '}
-          <Link href='https://www.shopify.com/' external type='BODY'>
+          <Link href='https://www.shopify.com/' external type='body'>
             Shopify
           </Link>
           , working on the{' '}
-          <Link href='https://polaris.shopify.com/' external type='BODY'>
+          <Link href='https://polaris.shopify.com/' external type='body'>
             Polaris design system
           </Link>
           , I discovered digital accessibility and fell in love with it. I
@@ -86,10 +72,10 @@ export default function About() {
         </p>
         <p>
           I understand how and when to use ARIA attributes, labels, landmarks,
-          and semantic markup. I can embed accessibility into modern design
-          patterns, like animation, overlays, interactive components, drop and
-          drop, forms, tables, and other dynamic content. I'm trained in
-          assistive technology and accessibility tools.
+          focus management, and semantic markup. I can embed accessibility into
+          modern design patterns, like animation, overlays, interactive
+          components, drop and drop, forms, tables, and other dynamic content.
+          I'm trained in assistive technology and accessibility tools.
         </p>
         <hr aria-hidden='true' />
       </Block>
@@ -115,7 +101,7 @@ export default function About() {
         <p>
           One of my passions is communication. I have {`${yearsNVC}`} years of
           experience with{' '}
-          <Link href='https://www.cnvc.org/' external type='BODY'>
+          <Link href='https://www.cnvc.org/' external type='body'>
             empathic communication
           </Link>{' '}
           in addition to other communication and conflict resolution modalities.

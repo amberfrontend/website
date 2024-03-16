@@ -28,7 +28,7 @@ export default function Qualifications() {
             <Link
               href='https://www.accessibilityassociation.org/s/certified-professional'
               external
-              type='BODY'
+              type='body'
             >
               CPACC
             </Link>
@@ -48,7 +48,7 @@ export default function Qualifications() {
             <Link
               href='https://www.deque.com/training/?branded=&utm_term=deque%20accessibility%20training&utm_campaign=Search+-+Branded&utm_source=adwords&utm_medium=ppc&hsa_src=g&hsa_ad=430042340360&hsa_tgt=aud-962204394155:kwd-1594574712882&hsa_mt=e&hsa_ver=3&hsa_acc=7854167720&hsa_kw=deque%20accessibility%20training&hsa_grp=98767378974&hsa_cam=1494072164&hsa_net=adwords&gad_source=1&gclid=Cj0KCQjw-r-vBhC-ARIsAGgUO2ACHlp4Xpx8ox0J2O4Y264yMQtfO_liBrrF0KS3qQ1lGf7bmDrsChcaAu2pEALw_wcB'
               external
-              type='BODY'
+              type='body'
             >
               Deque Systems Web Accessibility
             </Link>
@@ -61,7 +61,7 @@ export default function Qualifications() {
         <Link
           href='https://shopify.engineering/building-data-table-component-react'
           external
-          type='BODY'
+          type='body'
         >
           Building a Data Table Component in React
         </Link>

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { COLORS } from '../../styles/theme';
 
-export type ButtonType = 'BODY' | 'HEADER';
+export type ButtonType = 'body' | 'header';
 
 interface ButtonProps {
   ariaLabel?: string | undefined;
@@ -19,7 +19,7 @@ export type ButtonRef = HTMLButtonElement;
 const Button = forwardRef<ButtonRef, ButtonProps>(
   ({ ariaLabel = undefined, children, className, id, type, onClick }, ref) => {
     const StyledButton = styled.button`
-      background: ${type === 'BODY' ? COLORS.PRIMARY : COLORS.NEAR_BLACK};
+      background: ${type === 'body' ? COLORS.PRIMARY : COLORS.NEAR_BLACK};
       color: ${COLORS.WHITE};
       cursor: pointer;
       font-weight: 700;
@@ -32,7 +32,7 @@ const Button = forwardRef<ButtonRef, ButtonProps>(
       &:active,
       &:hover {
         outline: 0.15rem solid
-          ${type === 'BODY' ? COLORS.PRIMARY : COLORS.NEAR_BLACK};
+          ${type === 'body' ? COLORS.PRIMARY : COLORS.NEAR_BLACK};
         outline-offset: 0.1rem;
       }
     `;

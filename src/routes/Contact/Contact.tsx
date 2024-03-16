@@ -12,7 +12,7 @@ export default function Contact() {
         <Link
           href='https://www.linkedin.com/in/mizamberarmstrong'
           external
-          type='BODY'
+          type='body'
         >
           mizamberarmstrong
         </Link>
@@ -20,7 +20,7 @@ export default function Contact() {
       <hr aria-hidden='true' />
       <h2>GitHub</h2>
       <p>
-        <Link href='https://github.com/amberfrontend' external type='BODY'>
+        <Link href='https://github.com/amberfrontend' external type='body'>
           amberfrontend
         </Link>
       </p>
