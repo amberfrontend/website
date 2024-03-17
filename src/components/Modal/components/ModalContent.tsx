@@ -1,7 +1,7 @@
-import { ReactNode } from 'react';
+import { ReactNode, useContext } from 'react';
 import styled from 'styled-components';
 
-import { COLORS } from '../../../styles/theme';
+import { ThemeContext } from '../../../architecture/ThemeContext/ThemeContext';
 
 import ModalHeader from './ModalHeader';
 import ModalFocusTrap from './ModalFocusTrap';
@@ -19,8 +19,10 @@ export default function ModalContent({
   title,
   onClose,
 }: ModalContentProps) {
+  const theme = useContext(ThemeContext);
+
   const StyledModal = styled.div`
-    background: ${COLORS.WHITE};
+    background: ${theme.BACKGROUND.BODY};
     width: 100%;
     height: 100vh;
     overflow-y: hidden;

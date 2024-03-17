@@ -1,16 +1,19 @@
-import { ReactNode } from 'react';
+import { ReactNode, useContext } from 'react';
 import styled from 'styled-components';
-import { COLORS } from '../../styles/theme';
+
+import { ThemeContext } from '../../architecture/ThemeContext/ThemeContext';
 
 interface TagProps {
   children: ReactNode;
 }
 
 export default function Tag({ children }: TagProps) {
+  const theme = useContext(ThemeContext);
+
   const StyledTag = styled.div`
-    border: 0.2rem solid ${COLORS.NEAR_BLACK};
-    background: ${COLORS.GREY01};
-    color: ${COLORS.NEAR_BLACK};
+    border: 0.2rem solid ${theme.TAG.BORDER};
+    background: ${theme.TAG.BACKGROUND};
+    color: ${theme.TAG.COLOR};
     border-radius: 1rem;
     padding: 0.2rem 1rem;
     display: flex;

@@ -1,7 +1,7 @@
-import { forwardRef, ReactNode } from 'react';
+import { forwardRef, ReactNode, useContext } from 'react';
 import styled from 'styled-components';
 
-import { COLORS } from '../../styles/theme';
+import { ThemeContext } from '../../architecture/ThemeContext/ThemeContext';
 
 export type ButtonType = 'body' | 'header';
 
@@ -18,9 +18,15 @@ export type ButtonRef = HTMLButtonElement;
 
 const Button = forwardRef<ButtonRef, ButtonProps>(
   ({ ariaLabel = undefined, children, className, id, type, onClick }, ref) => {
+    const theme = useContext(ThemeContext);
+
     const StyledButton = styled.button`
-      background: ${type === 'body' ? COLORS.PRIMARY : COLORS.NEAR_BLACK};
-      color: ${COLORS.WHITE};
+      background: ${type === 'body'
+        ? theme.BUTTON.BODY.BACKGROUND
+        : theme.BUTTON.HEADER.BACKGROUND};
+      color: ${type === 'body'
+        ? theme.BUTTON.BODY.TEXT
+        : theme.BUTTON.HEADER.TEXT};
       cursor: pointer;
       font-weight: 700;
       font-size: 1rem;
@@ -32,7 +38,9 @@ const Button = forwardRef<ButtonRef, ButtonProps>(
       &:active,
       &:hover {
         outline: 0.15rem solid
-          ${type === 'body' ? COLORS.PRIMARY : COLORS.NEAR_BLACK};
+          ${type === 'body'
+            ? theme.BUTTON.BODY.OUTLINE
+            : theme.BUTTON.HEADER.OUTLINE};
         outline-offset: 0.1rem;
       }
     `;

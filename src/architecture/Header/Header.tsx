@@ -1,3 +1,8 @@
+import { useContext } from 'react';
+import styled from 'styled-components';
+
+import { ThemeContext } from '../ThemeContext/ThemeContext';
+
 import './Header.css';
 
 interface HeaderProps {
@@ -6,5 +11,11 @@ interface HeaderProps {
 }
 
 export default function Header({ children, className }: HeaderProps) {
-  return <header className={className}>{children}</header>;
+  const theme = useContext(ThemeContext);
+
+  const StyledHeader = styled.header`
+    background: ${theme.BACKGROUND.HEADER};
+  `;
+
+  return <StyledHeader className={className}>{children}</StyledHeader>;
 }

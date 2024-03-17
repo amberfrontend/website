@@ -1,6 +1,7 @@
+import { useContext } from 'react';
 import styled from 'styled-components';
 
-import { COLORS } from '../../styles/theme';
+import { ThemeContext } from '../../architecture/ThemeContext/ThemeContext';
 
 import Layout from '../../architecture/Layout/Layout';
 import Block from '../../components/Block/Block';
@@ -8,9 +9,11 @@ import headshot from '../../assets/images/AmberArmstrong.jpg';
 import './Index.css';
 
 export default function Index() {
+  const theme = useContext(ThemeContext);
+
   const StyledImg = styled.img`
     border-radius: 0.3rem;
-    box-shadow: 0.1rem 0.1rem 0.4rem ${COLORS.GREY02};
+    box-shadow: 0.1rem 0.1rem 0.4rem ${theme.IMG.BOX_SHADOW};
   `;
 
   const today = new Date();
@@ -34,15 +37,15 @@ export default function Index() {
                 in <strong className='Opt'>Ontario, Canada</strong>.
               </p>
               <p>
-                I've been working in web development since the 90s. Tech is
-                constantly evolving and that's one thing I like about it because
-                I love learning. I've evolved as the industry has evolved, which
-                has made me a pretty well-rounded developer.
+                I've been working in web development since I was a teenager.
+                Tech is constantly changing and I love learning, so I keep
+                evolving along with it. That's made me a pretty well-rounded
+                developer.
               </p>
 
               <p>
-                In my early days, I designed custom websites for companies like
-                La Senza (lingerie), Lasania (fashion), and David Suzuki
+                Early in my career, I designed custom websites for companies
+                like La Senza (lingerie), Lasania (fashion), and David Suzuki
                 Foundation. I moved over to CMS development (Drupal and
                 WordPress) and did that for several years.
               </p>
