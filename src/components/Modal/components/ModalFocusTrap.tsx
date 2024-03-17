@@ -1,34 +1,40 @@
-import { ReactNode, useEffect } from 'react';
+import { ReactNode, RefObject, useEffect, useRef } from 'react';
 
 interface ModalFocusTrapProps {
   children: ReactNode;
-  id: string;
 }
 
-export default function ModalFocusTrap({ children, id }: ModalFocusTrapProps) {
+export default function ModalFocusTrap({ children }: ModalFocusTrapProps) {
+  const modalFocusTrapRef = useRef(null) as RefObject<HTMLDivElement>;
+
   useEffect(() => {
     const handleKeydown = (event: KeyboardEvent) => {
-      const wrapper = document.getElementById(id);
-      const actionableNodes = wrapper?.querySelectorAll('a,button,input');
+      if (modalFocusTrapRef && modalFocusTrapRef.current) {
+        const actionableNodes =
+          modalFocusTrapRef.current.querySelectorAll('a,button,input');
 
-      const actionableElements = [] as HTMLElement[];
+        const actionableElements = [] as HTMLElement[];
 
-      if (actionableNodes) {
-        for (let i = 0; i < actionableNodes?.length; i++) {
-          actionableElements.push(actionableNodes[i] as HTMLElement);
+        if (actionableNodes) {
+          for (let i = 0; i < actionableNodes?.length; i++) {
+            actionableElements.push(actionableNodes[i] as HTMLElement);
+          }
         }
-      }
 
-      if (event.key === 'Tab') {
-        if (event.shiftKey === true && actionableElements[0] === event.target) {
-          actionableElements[actionableElements.length - 1].focus();
-          event.preventDefault();
-        } else if (
-          event.shiftKey === false &&
-          actionableElements[actionableElements.length - 1] === event.target
-        ) {
-          actionableElements[0].focus();
-          event.preventDefault();
+        if (event.key === 'Tab') {
+          if (
+            event.shiftKey === true &&
+            actionableElements[0] === event.target
+          ) {
+            actionableElements[actionableElements.length - 1].focus();
+            event.preventDefault();
+          } else if (
+            event.shiftKey === false &&
+            actionableElements[actionableElements.length - 1] === event.target
+          ) {
+            actionableElements[0].focus();
+            event.preventDefault();
+          }
         }
       }
     };
@@ -39,5 +45,5 @@ export default function ModalFocusTrap({ children, id }: ModalFocusTrapProps) {
     };
   });
 
-  return children;
+  return <div ref={modalFocusTrapRef}>{children}</div>;
 }
