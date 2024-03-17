@@ -1,4 +1,4 @@
-import { ReactNode, useId } from 'react';
+import { ReactNode } from 'react';
 import styled from 'styled-components';
 
 import { COLORS } from '../../../styles/theme';
@@ -19,8 +19,6 @@ export default function ModalContent({
   title,
   onClose,
 }: ModalContentProps) {
-  const modalWrapperId = useId();
-
   const StyledModal = styled.div`
     background: ${COLORS.WHITE};
     width: 100%;
@@ -39,12 +37,11 @@ export default function ModalContent({
   `;
 
   return (
-    <ModalFocusTrap id={modalWrapperId}>
+    <ModalFocusTrap>
       <StyledModal
         aria-label={title}
         aria-modal='true'
         role='dialog'
-        id={modalWrapperId}
         className='ModalContainer'
       >
         <ModalHeader title={isNav ? null : title} onClose={onClose} />
