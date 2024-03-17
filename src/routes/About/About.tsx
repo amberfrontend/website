@@ -37,12 +37,13 @@ export default function About() {
       <Block>
         <h2>Design Systems and UX Development</h2>
         <p>
-          I absolutely love great UX, so I love design system engineering. I've
-          worked on three component libraries, maturing and maintaining them, as
-          well as remediating and building accessible components. I've built
-          complex components, like responsive and sortable data tables, modals
-          with focus trap, datepickers, filters &amp; search, animations,
-          comboboxes, context, and more.
+          I'm obsessed with great UX, so design systems and component libraries
+          are one of my favorite aspects of software. I've worked on three
+          component libraries, maturing and maintaining them, as well as
+          remediating for accessibility and building new accessible components.
+          I've built complex components, like responsive and sortable data
+          tables, modals with focus trap, datepickers, filters &amp; search,
+          animations, comboboxes, customizable theme engines, and more.
         </p>
         <p>
           Component libraries should be flexible and collaborative, without
@@ -111,9 +112,9 @@ export default function About() {
         <h3>As a Person</h3>
         <p>
           The first thing people usually notice about me is my enthusiasm and my
-          zest for life. The second thing is often my persistence. I've overcome
-          many barriers with resilience and tenacity. I believe in a growth
-          mindset.
+          zest for life. The second thing is often my persistence. I've broken
+          through many glass ceilings with resilience and tenacity. I believe in
+          a growth mindset.
         </p>
         <p>
           For fun, I have too many hobbies, like music, cooking, cake

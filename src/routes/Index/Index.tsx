@@ -9,9 +9,15 @@ import './Index.css';
 
 export default function Index() {
   const StyledImg = styled.img`
-    border-radius: 0.6rem;
-    box-shadow: 0.2rem 0.2rem 0.6rem ${COLORS.GREY02};
+    border-radius: 0.3rem;
+    box-shadow: 0.1rem 0.1rem 0.4rem ${COLORS.GREY02};
   `;
+
+  const today = new Date();
+  const yearBeganSoftware = 2016;
+  const yearsOfSoftware = today.getFullYear() - yearBeganSoftware;
+  const yearsOfA11y = yearsOfSoftware - 2;
+
   return (
     <>
       <Block>
@@ -21,20 +27,32 @@ export default function Index() {
           left={
             <>
               <p>
-                I'm a <strong className='Opt'>software developer</strong> and
+                I'm a{' '}
+                <strong className='Opt'>frontend software developer</strong> and
                 certified{' '}
                 <strong className='Opt'>accessibility specialist</strong>, based
                 in <strong className='Opt'>Ontario, Canada</strong>.
               </p>
               <p>
-                I've been working on the web since the 90s. I'm a well-rounded
-                developer, after several iterations of web development best
-                practices.
+                I've been working in web development since the 90s. Tech is
+                constantly evolving and that's one thing I like about it because
+                I love learning. I've evolved as the industry has evolved, which
+                has made me a pretty well-rounded developer.
+              </p>
+
+              <p>
+                In my early days, I designed custom websites for companies like
+                La Senza (lingerie), Lasania (fashion), and David Suzuki
+                Foundation. I moved over to CMS development (Drupal and
+                WordPress) and did that for several years.
               </p>
               <p>
-                These days, I work as a Frontend Developer in React and I'm
-                passionate about a11y.
+                Then, {yearsOfSoftware} years ago, I became a frontend software
+                developer, mostly in React, and {yearsOfA11y} years ago, I did a
+                deep dive into digital accessibility (a11y).
               </p>
+
+              <p></p>
             </>
           }
           right={
