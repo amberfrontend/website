@@ -1,21 +1,31 @@
+import { useContext } from 'react';
 import styled from 'styled-components';
 
 import useWindowWidth from '../../custom-hooks/useWindowWidth';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faMoon, faLightbulb } from '@fortawesome/free-solid-svg-icons';
+
+import { ThemeContext } from '../ThemeContext/ThemeContext';
+import { MODE } from '../../styles/theme';
 
 import Flex from '../../components/Flex/Flex';
 import Link from '../../components/Link/Link';
+import Button from '../../components/Button/Button';
 import Modal from '../../components/Modal/Modal';
-import { THEME_LIGHT } from '../../styles/theme';
+
 import './Navigation.css';
 
-export default function Navigation() {
+interface NavigationProps {
+  onToggleTheme(): void;
+}
+
+export default function Navigation({ onToggleTheme }: NavigationProps) {
   const isMobileWeb = useWindowWidth();
+  const theme = useContext(ThemeContext);
 
   const StyledLeftLetter = styled.span`
-    color: ${THEME_LIGHT.TEXT.LOGO};
+    color: ${theme.TEXT.LOGO};
   `;
 
   const StyledNav = styled.nav`
@@ -70,13 +80,26 @@ export default function Navigation() {
             Contact
           </Link>
         </li>
+        {!isMobileWeb && (
+          <li>
+            <Button
+              type='header'
+              ariaLabel={theme.COPY.TOGGLE_BUTTON}
+              onClick={onToggleTheme}
+            >
+              <FontAwesomeIcon
+                icon={theme.MODE === MODE.DARK ? faLightbulb : faMoon}
+              />
+            </Button>
+          </li>
+        )}
       </ul>
     </StyledNav>
   );
 
   const menuMarkup = isMobileWeb ? (
     <div>
-      <Flex justifyContent='flex-start'>
+      <Flex justifyContent='space-between'>
         <Modal
           title='Main menu'
           isNav={true}
@@ -87,6 +110,17 @@ export default function Navigation() {
         >
           {linksMarkup}
         </Modal>
+        {isMobileWeb && (
+          <Button
+            type='header'
+            ariaLabel={theme.COPY.TOGGLE_BUTTON}
+            onClick={onToggleTheme}
+          >
+            <FontAwesomeIcon
+              icon={theme.MODE === MODE.DARK ? faLightbulb : faMoon}
+            />
+          </Button>
+        )}
       </Flex>
     </div>
   ) : (

@@ -1,3 +1,8 @@
+import { useContext } from 'react';
+import styled from 'styled-components';
+
+import { ThemeContext } from '../ThemeContext/ThemeContext';
+
 import './Main.css';
 
 interface MainProps {
@@ -6,5 +11,13 @@ interface MainProps {
 }
 
 export default function Main({ children, className }: MainProps) {
-  return <main className={className}>{children}</main>;
+  const theme = useContext(ThemeContext);
+
+  const StyledMain = styled.main`
+    background: ${theme.BACKGROUND.BODY};
+    color: ${theme.TEXT.BODY};
+    padding-bottom: 2rem;
+  `;
+
+  return <StyledMain className={className}>{children}</StyledMain>;
 }

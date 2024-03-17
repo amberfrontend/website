@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
 import { Link as RouterLink } from 'react-router-dom';
 
-import { COLORS } from '../../styles/theme';
+import { ThemeContext } from '../../architecture/ThemeContext/ThemeContext';
 
 type LinkType = 'body' | 'header';
 
@@ -26,6 +26,8 @@ export default function Link({
   type,
   onClick,
 }: LinkProps) {
+  const theme = useContext(ThemeContext);
+
   const externalMarkup = external ? (
     <span className='visually-hidden'>Opens in a new window</span>
   ) : null;
@@ -33,11 +35,12 @@ export default function Link({
   const ariaCurrent = current ? 'page' : false;
 
   const StyledLinkWrapper = styled.span`
-    a {
-      color: ${COLORS.BLACK};
+    a,
+    a:visited {
+      color: ${type === 'body' ? theme.LINK.BODY.TEXT : theme.LINK.HEADER.TEXT};
       border-bottom-style: ${type === 'body' && 'solid'};
       border-bottom-width: ${type === 'body' && '0.2rem'};
-      border-bottom-color: ${type === 'body' && COLORS.PRIMARY};
+      border-bottom-color: ${type === 'body' && theme.LINK.BODY.UNDERLINE};
       font-weight: 700;
       text-decoration: none;
     }
@@ -46,13 +49,12 @@ export default function Link({
     a:active,
     a:focus {
       border-radius: 0.2rem;
-      outline: 0.2rem solid ${type === 'header' ? COLORS.BLACK : COLORS.PRIMARY};
+      outline: 0.2rem solid
+        ${type === 'body'
+          ? theme.LINK.BODY.UNDERLINE
+          : theme.LINK.HEADER.UNDERLINE};
       outline-offset: 0.04rem;
       border-bottom: none;
-    }
-
-    a:visited {
-      color: ${COLORS.BLACK};
     }
   `;
 

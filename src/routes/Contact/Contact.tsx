@@ -24,6 +24,12 @@ export default function Contact() {
           amberfrontend
         </Link>
       </p>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   );
 }

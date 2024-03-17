@@ -1,4 +1,4 @@
-export const COLORS = {
+const COLORS = {
   BLACK: '#000',
   GREY01: '#ccc',
   GREY02: '#777',
@@ -9,10 +9,21 @@ export const COLORS = {
   WHITE: '#fff',
 };
 
-export const THEME_DARK = {
+const COPY = {
+  SWITCH_TO_DARK: 'Switch to dark mode',
+  SWITCH_TO_LIGHT: 'Switch to light mode',
+};
+
+export const MODE = {
+  DARK: 'dark',
+  LIGHT: 'light',
+};
+
+const DARK = Object.freeze({
   BACKGROUND: {
     BODY: COLORS.BLACK,
     HEADER: COLORS.BLACK,
+    FOOTER: COLORS.BLACK,
   },
   BORDER: {
     HEADER: COLORS.BLACK,
@@ -21,31 +32,45 @@ export const THEME_DARK = {
     BODY: {
       BACKGROUND: COLORS.WHITE,
       TEXT: COLORS.BLACK,
+      OUTLINE: COLORS.PRIMARY,
     },
     HEADER: {
       BACKGROUND: COLORS.WHITE,
       TEXT: COLORS.BLACK,
+      OUTLINE: COLORS.WHITE,
     },
   },
-  COPY: 'Switch to light mode',
-  LINK: {
-    BODY: COLORS.PRIMARY,
-    HEADER: COLORS.WHITE,
+  COPY: {
+    TOGGLE_BUTTON: COPY.SWITCH_TO_LIGHT,
   },
+  IMG: {
+    BOX_SHADOW: COLORS.BLACK,
+  },
+  LINK: {
+    BODY: { TEXT: COLORS.WHITE, UNDERLINE: COLORS.PRIMARY },
+    HEADER: { TEXT: COLORS.WHITE, UNDERLINE: COLORS.WHITE },
+  },
+  MODE: MODE.DARK,
   SHADOW: {
     HEADER: COLORS.WHITE,
+  },
+  TAG: {
+    BACKGROUND: COLORS.GREY01,
+    BORDER: COLORS.NEAR_BLACK,
+    COLOR: COLORS.NEAR_BLACK,
   },
   TEXT: {
     BODY: COLORS.WHITE,
     HEADER: COLORS.WHITE,
     LOGO: COLORS.PRIMARY,
   },
-};
+});
 
-export const THEME_LIGHT = {
+const LIGHT = Object.freeze({
   BACKGROUND: {
     BODY: COLORS.WHITE,
     HEADER: COLORS.WHITE,
+    FOOTER: COLORS.WHITE,
   },
   BORDER: {
     HEADER: COLORS.NEUTRAL,
@@ -54,16 +79,29 @@ export const THEME_LIGHT = {
     BODY: {
       BACKGROUND: COLORS.SECONDARY,
       TEXT: COLORS.WHITE,
+      OUTLINE: COLORS.SECONDARY,
     },
     HEADER: {
       BACKGROUND: COLORS.BLACK,
       TEXT: COLORS.NEUTRAL,
+      OUTLINE: COLORS.BLACK,
     },
   },
-  COPY: 'Switch to dark mode',
+  COPY: {
+    TOGGLE_BUTTON: COPY.SWITCH_TO_DARK,
+  },
+  IMG: {
+    BOX_SHADOW: COLORS.GREY02,
+  },
   LINK: {
-    BODY: COLORS.PRIMARY,
-    HEADER: COLORS.BLACK,
+    BODY: { TEXT: COLORS.BLACK, UNDERLINE: COLORS.PRIMARY },
+    HEADER: { TEXT: COLORS.BLACK, UNDERLINE: COLORS.BLACK },
+  },
+  MODE: MODE.LIGHT,
+  TAG: {
+    BACKGROUND: COLORS.GREY01,
+    BORDER: COLORS.NEAR_BLACK,
+    COLOR: COLORS.NEAR_BLACK,
   },
   TEXT: {
     BODY: COLORS.BLACK,
@@ -73,4 +111,9 @@ export const THEME_LIGHT = {
   SHADOW: {
     HEADER: COLORS.WHITE,
   },
+});
+
+export const THEME = {
+  DARK,
+  LIGHT,
 };
