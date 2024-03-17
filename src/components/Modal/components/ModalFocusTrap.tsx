@@ -1,5 +1,6 @@
 import { ReactNode, RefObject, useEffect, useRef } from 'react';
 
+import { FOCUSABLE_SELECTORS } from '../../../constants/constants';
 interface ModalFocusTrapProps {
   children: ReactNode;
 }
@@ -11,7 +12,7 @@ export default function ModalFocusTrap({ children }: ModalFocusTrapProps) {
     const handleKeydown = (event: KeyboardEvent) => {
       if (modalFocusTrapRef && modalFocusTrapRef.current) {
         const actionableNodes =
-          modalFocusTrapRef.current.querySelectorAll('a,button,input');
+          modalFocusTrapRef.current.querySelectorAll(FOCUSABLE_SELECTORS);
 
         const actionableElements = [] as HTMLElement[];
 

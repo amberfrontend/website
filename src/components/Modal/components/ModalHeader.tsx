@@ -33,7 +33,7 @@ export default function ModalHeader({ onClose, title }: ModalHeaderProps) {
       >
         <Button
           id={closeButtonId}
-          type='HEADER'
+          type='header'
           ref={closeButtonRef}
           onClick={onClose}
         >
