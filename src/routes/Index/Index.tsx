@@ -34,7 +34,7 @@ export default function Index() {
                 <strong className='Opt'>frontend software developer</strong> and
                 certified{' '}
                 <strong className='Opt'>accessibility specialist</strong>, based
-                in <strong className='Opt'>Ontario, Canada</strong>.
+                in <strong className='Opt'>Canada</strong>.
               </p>
               <p>
                 I've been working in web development since I was a teenager.
