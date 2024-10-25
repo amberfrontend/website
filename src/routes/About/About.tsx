@@ -11,14 +11,34 @@ export default function About() {
     <>
       <h1>About</h1>
       <Block>
+        <h2>Design Systems and UX Development</h2>
+        <p>
+          I'm obsessed with great UX, so design systems and component libraries
+          are one of my favorite areas of software. I've worked on four
+          component libraries, maturing and maintaining them, as well as
+          remediating them for accessibility and building new accessible
+          components. I've built complex components, like dual-thumb range
+          sliders, responsive and sortable data tables, datepickers, modals with
+          focus trap, filters &amp; comboboxes, animations, customizable theme
+          engines, and more.
+        </p>
+        <p>
+          Component libraries should be flexible and collaborative, without
+          compromising on consistency, so I aim to expose the right configurable
+          pieces, while installing guardrails and fallbacks. I think about
+          composability, scalability, and flexibility. I attempt to build
+          iteratively in ways that avoid potential breaking changes in the
+          future.
+        </p>
+      </Block>
+      <Block>
         <h2>Feature Development</h2>
         <p>
-          I've built full features for enterprise apps with millions of users,
-          mostly in the fintech and ecommerce space. Features that I've built
-          include bulk payments, recent transactions (money transfers), sign up
-          and onboarding, data displays, and integrations with other apps. I'm
-          proficient with async API calls, complex state management, security,
-          and performance.
+          I've also built full features for enterprise apps with millions of
+          users, mostly in the fintech and ecommerce space. Features that I've
+          built include bulk payments, recent transactions (money transfers),
+          sign up and onboarding, and app integrations. I'm proficient with
+          async API calls, complex state management, security, and performance.
         </p>
       </Block>
       <Block>
@@ -32,26 +52,6 @@ export default function About() {
           performance, like preventing unnecessary re-renders, offloading tasks
           to the server, debouncing expensive tasks, memoizing values, and
           initializing objects in a performant way.
-        </p>
-      </Block>
-      <Block>
-        <h2>Design Systems and UX Development</h2>
-        <p>
-          I'm obsessed with great UX, so design systems and component libraries
-          are one of my favorite aspects of software. I've worked on three
-          component libraries, maturing and maintaining them, as well as
-          remediating for accessibility and building new accessible components.
-          I've built complex components, like responsive and sortable data
-          tables, modals with focus trap, datepickers, filters &amp; search,
-          animations, comboboxes, customizable theme engines, and more.
-        </p>
-        <p>
-          Component libraries should be flexible and collaborative, without
-          compromising on consistency, so I aim to expose the right configurable
-          pieces, while installing guardrails and fallbacks. I think about
-          composability, scalability and flexibility. I attempt to build
-          iteratively in ways that avoid potential breaking changes in the
-          future.
         </p>
       </Block>
       <Block>
@@ -78,6 +78,16 @@ export default function About() {
           components, drop and drop, forms, tables, and other dynamic content.
           I'm trained in assistive technology and accessibility tools.
         </p>
+      </Block>
+      <Block>
+        <h2>Technical Writing</h2>
+        <p>
+          I have strong writing skills from years as an English tutor and from
+          writing classes. I adore writing technical documentation and come from
+          a family of technical writers. I have a certain way of approaching
+          complexity and I've heard many, many times that I simplify confusing
+          topics in a way that non-technical people can understand.
+        </p>
         <hr aria-hidden='true' />
       </Block>
 
@@ -98,7 +108,13 @@ export default function About() {
           I'm T-shaped, which means I have both a deep level of expertise in my
           craft and a broad understanding across a number of adjascent topics.
         </p>
-        <h3>Communication</h3>
+        <h3>As a Person</h3>
+        <p>
+          The first thing people usually notice about me is my enthusiasm and my
+          zest for life. The second thing is often my persistence. I've broken
+          through many glass ceilings with resilience and tenacity. I believe in
+          a growth mindset.
+        </p>
         <p>
           One of my passions is communication. I have {`${yearsNVC}`} years of
           experience with{' '}
@@ -106,15 +122,6 @@ export default function About() {
             empathic communication
           </Link>{' '}
           in addition to other communication and conflict resolution modalities.
-          I also have strong writing skills from years as an English tutor and
-          from writing classes.
-        </p>
-        <h3>As a Person</h3>
-        <p>
-          The first thing people usually notice about me is my enthusiasm and my
-          zest for life. The second thing is often my persistence. I've broken
-          through many glass ceilings with resilience and tenacity. I believe in
-          a growth mindset.
         </p>
         <p>
           For fun, I have too many hobbies, like music, cooking, cake
