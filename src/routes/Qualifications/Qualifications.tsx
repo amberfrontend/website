@@ -295,7 +295,6 @@ export default function Qualifications() {
               <FontAwesomeIcon icon={faCss3} /> CSS
             </Flex>
           </Tag>
-
           <Tag>
             <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               <FontAwesomeIcon icon={faPython} /> Python
@@ -307,65 +306,72 @@ export default function Qualifications() {
             </Flex>
           </Tag>
         </Flex>
+        <hr aria-hidden='true' />
       </Block>
       <Block>
         <h2>Personal Projects &amp; Technology</h2>
         <h3>Gluten Refund</h3>
-        <Flex justifyContent='flex-start' gap='0.5rem'>
-          <Tag>
-            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
-              <FontAwesomeIcon icon={faNodeJs} /> NodeJS
-            </Flex>
-          </Tag>
+        <Flex justifyContent='flex-start' flexWrap='wrap' gap='0.5rem'>
+          <Flex justifyContent='flex-start' gap='0.5rem'>
+            <Tag>
+              <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
+                <FontAwesomeIcon icon={faNodeJs} /> NodeJS
+              </Flex>
+            </Tag>
+          </Flex>
+          <Flex justifyContent='flex-start' gap='0.5rem'>
+            <Tag>
+              <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
+                <FontAwesomeIcon icon={faReact} /> React
+              </Flex>
+            </Tag>
+          </Flex>
+          <Tag>Tailwind</Tag>
+          <Tag>Redux</Tag>
+          <Tag>Redux Toolkit</Tag>
+          <Tag>Thunk</Tag>
+          <Flex justifyContent='flex-start' gap='0.5rem'>
+            <Tag>
+              <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
+                <FontAwesomeIcon icon={faUniversalAccess} /> a11y
+              </Flex>
+            </Tag>
+          </Flex>
         </Flex>
-        <Flex justifyContent='flex-start' gap='0.5rem'>
-          <Tag>
-            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
-              <FontAwesomeIcon icon={faReact} /> React
-            </Flex>
-          </Tag>
-        </Flex>
-        <Tag>Tailwind</Tag>
-        <Tag>Redux</Tag>
-        <Tag>Redux Toolkit</Tag>
-        <Tag>Thunk</Tag>
-        <Flex justifyContent='flex-start' gap='0.5rem'>
-          <Tag>
-            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
-              <FontAwesomeIcon icon={faUniversalAccess} /> a11y
-            </Flex>
-          </Tag>
-        </Flex>
+        <hr aria-hidden='true' />
       </Block>
       <Block>
         <h3>Logable</h3>
-        <Flex justifyContent='flex-start' gap='0.5rem'>
-          <Tag>
-            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
-              <FontAwesomeIcon icon={faNodeJs} /> NodeJS
-            </Flex>
-          </Tag>
-        </Flex>
-        <Tag>MongoDB</Tag>
-        <Flex justifyContent='flex-start' gap='0.5rem'>
-          <Tag>
-            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
-              <FontAwesomeIcon icon={faReact} /> React
-            </Flex>
-          </Tag>
-        </Flex>
-        <Tag>
-          <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
-            <FontAwesomeIcon icon={faCss3} /> CSS
+        <Flex justifyContent='flex-start' flexWrap='wrap' gap='0.5rem'>
+          <Flex justifyContent='flex-start' gap='0.5rem'>
+            <Tag>
+              <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
+                <FontAwesomeIcon icon={faNodeJs} /> NodeJS
+              </Flex>
+            </Tag>
           </Flex>
-        </Tag>
-        <Flex justifyContent='flex-start' gap='0.5rem'>
+          <Tag>MongoDB</Tag>
+          <Flex justifyContent='flex-start' gap='0.5rem'>
+            <Tag>
+              <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
+                <FontAwesomeIcon icon={faReact} /> React
+              </Flex>
+            </Tag>
+          </Flex>
           <Tag>
             <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
-              <FontAwesomeIcon icon={faUniversalAccess} /> a11y
+              <FontAwesomeIcon icon={faCss3} /> CSS
             </Flex>
           </Tag>
+          <Flex justifyContent='flex-start' gap='0.5rem'>
+            <Tag>
+              <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
+                <FontAwesomeIcon icon={faUniversalAccess} /> a11y
+              </Flex>
+            </Tag>
+          </Flex>
         </Flex>
+        <hr aria-hidden='true' />
       </Block>
       <Block>
         <h2>Publications</h2>
