@@ -24,10 +24,6 @@ export default function Navigation({ onToggleTheme }: NavigationProps) {
   const isMobileWeb = useWindowWidth();
   const theme = useContext(ThemeContext);
 
-  const StyledLeftLetter = styled.span`
-    color: ${theme.TEXT.LOGO};
-  `;
-
   const StyledNav = styled.nav`
     padding: 0;
 
@@ -56,12 +52,8 @@ export default function Navigation({ onToggleTheme }: NavigationProps) {
               Home
             </Link>
           ) : (
-            <Link href={`/`} type='header' className='NavLink Logo'>
-              <span className='LogoWrapper'>
-                <StyledLeftLetter className='LeftLetter'>A</StyledLeftLetter>
-                <span aria-hidden={true}>/</span>
-                <span className='RightLetter'>A</span>
-              </span>
+            <Link href={`/`} type='header' className='NavLink'>
+              Home
             </Link>
           )}
         </li>
