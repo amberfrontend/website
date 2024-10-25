@@ -30,31 +30,29 @@ export default function Index() {
           left={
             <>
               <p>
-                I'm a{' '}
-                <strong className='Opt'>frontend software developer</strong> and
-                certified{' '}
-                <strong className='Opt'>accessibility specialist</strong>, based
+                I'm a <strong className='Opt'>Frontend Developer</strong> with
+                an extensive design background, as well as a certified{' '}
+                <strong className='Opt'>Accessibility Specialist</strong>, based
                 in <strong className='Opt'>Canada</strong>.
               </p>
               <p>
-                I've been working in web development since I was a teenager.
-                Tech is constantly changing and I love learning, so I keep
-                evolving along with it. That's made me a pretty well-rounded
+                I've been working in web development since I was a teenager. I
+                love learning and tech is constantly changing, so I keep
+                evolving along with it, making me a pretty well-rounded
                 developer.
               </p>
-
               <p>
-                Early in my career, I designed custom websites for companies
-                like La Senza (lingerie), Lasania (fashion), and David Suzuki
-                Foundation. I moved over to CMS development (Drupal and
-                WordPress) and did that for several years.
+                Early in my career, I designed logos, branding packages, and
+                custom websites for companies like La Senza (lingerie), Lasania
+                (fashion), and David Suzuki Foundation (ENGO). I ran my own web
+                development company for nearly 10 years.
               </p>
               <p>
                 Then, {yearsOfSoftware} years ago, I became a frontend software
                 developer, mostly in React, and {yearsOfA11y} years ago, I did a
-                deep dive into digital accessibility (a11y).
+                deep dive into digital accessibility (a11y) to become a
+                specialist.
               </p>
-
               <p></p>
             </>
           }
