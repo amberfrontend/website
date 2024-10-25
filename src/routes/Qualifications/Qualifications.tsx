@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faReact,
   faJs,
+  faFigma,
   faSass,
   faGithub,
   faGitlab,
@@ -57,16 +58,29 @@ export default function Qualifications() {
         <hr aria-hidden='true' />
       </Block>
       <Block>
-        <h2>Publications</h2>
-        <Link
-          href='https://shopify.engineering/building-data-table-component-react'
-          external
-          type='body'
-        >
-          Building a Data Table Component in React
-        </Link>
-        <hr aria-hidden='true' />
         <h2>Professional Experience &amp; Technology</h2>
+        <h3>Senior Software Developer</h3>
+        <h4>Bloomberg Industry Group</h4>
+        <Flex justifyContent='flex-start' gap='0.5rem'>
+          <Tag>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
+              <FontAwesomeIcon icon={faUniversalAccess} /> a11y
+            </Flex>
+          </Tag>
+          <Tag>Stencil</Tag>
+          <Tag>Web components</Tag>
+          <Tag>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
+              <FontAwesomeIcon icon={faFigma} /> Figma
+            </Flex>
+          </Tag>
+          <Tag>Storybook</Tag>
+          <Tag>ZeroHeight</Tag>
+          <Tag>Chromium</Tag>
+        </Flex>
+        <hr aria-hidden='true' />
+      </Block>
+      <Block>
         <h3>Lead Digital Accessibility Specialist</h3>
         <h4>Scotiabank</h4>
         <Flex justifyContent='flex-start' gap='0.5rem'>
@@ -97,6 +111,11 @@ export default function Qualifications() {
           <Tag>
             <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               <FontAwesomeIcon icon={faJs} /> JavaScript
+            </Flex>
+          </Tag>
+          <Tag>
+            <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
+              <FontAwesomeIcon icon={faFigma} /> Figma
             </Flex>
           </Tag>
           <Tag>
@@ -287,6 +306,17 @@ export default function Qualifications() {
             </Flex>
           </Tag>
         </Flex>
+      </Block>
+      <Block>
+        <h2>Publications</h2>
+        <Link
+          href='https://shopify.engineering/building-data-table-component-react'
+          external
+          type='body'
+        >
+          Building a Data Table Component in React
+        </Link>
+        <hr aria-hidden='true' />
       </Block>
     </>
   );
