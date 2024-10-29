@@ -62,7 +62,7 @@ export default function Qualifications() {
         <h2>Professional Experience &amp; Technology</h2>
         <h3>Senior Software Developer</h3>
         <h4>Bloomberg Industry Group</h4>
-        <Flex justifyContent='flex-start' gap='0.5rem'>
+        <Flex justifyContent='flex-start' flexWrap='wrap' gap='0.5rem'>
           <Tag>
             <Flex justifyContent='center' alignItems='center' gap='0.5rem'>
               <FontAwesomeIcon icon={faUniversalAccess} /> a11y
